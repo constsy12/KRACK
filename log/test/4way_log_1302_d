@@ -1,0 +1,81 @@
+root@sw1-ThinkPad-T61p:/home/sw1/KRACK_Test/krackattacks-scripts/krackattack# ./client.py 
+[18:50:05] Note: disable Wi-Fi in network manager & disable hardware encryption. Both may interfere with this script.
+[18:50:06] Starting hostapd ...
+Configuration file: /home/sw1/KRACK_Test/krackattacks-scripts/krackattack/hostapd.conf
+nl80211: Could not re-add multicast membership for vendor events: -2 (No such file or directory)
+Using interface wlan0 with hwaddr 90:9f:33:ec:7e:d0 and ssid "testnetwork"
+wlan0: interface state UNINITIALIZED->ENABLED
+wlan0: AP-ENABLED 
+[18:50:07] Ready. Connect to this Access Point to start the tests. Make sure the client requests an IP using DHCP!
+wlan0: STA 00:1d:93:11:22:33 IEEE 802.11: authenticated
+wlan0: STA 00:1d:93:11:22:33 IEEE 802.11: associated (aid 1)
+[18:52:03] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+wlan0: AP-STA-CONNECTED 00:1d:93:11:22:33
+wlan0: STA 00:1d:93:11:22:33 RADIUS: starting accounting session 3B0D3201F0680CBF
+[18:52:05] 00:1d:93:11:22:33: Hostapd: already installing pairwise key
+[18:52:05] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[18:52:07] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[18:52:08] 00:1d:93:11:22:33: no pairwise IV resets seem to have occured for one interval
+[18:52:08] 00:1d:93:11:22:33: DHCP reply 192.168.100.2 to 00:1d:93:11:22:33
+[18:52:08] 00:1d:93:11:22:33: DHCP reply 192.168.100.2 to 00:1d:93:11:22:33
+[18:52:09] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[18:52:10] 00:1d:93:11:22:33: client has IP address -> testing for group key reinstallation in the 4-way handshake
+[18:52:10] 00:1d:93:11:22:33: sent 1 broadcasts ARPs this interval
+[18:52:10] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[18:52:11] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[18:52:12] 00:1d:93:11:22:33: sent 2 broadcasts ARPs this interval
+[18:52:12] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[18:52:12] 00:1d:93:11:22:33: received 1 replies to the replayed broadcast ARP requests
+[18:52:13] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[18:52:13] 00:1d:93:11:22:33: no pairwise IV resets seem to have occured for one interval
+[18:52:14] 00:1d:93:11:22:33: sent 3 broadcasts ARPs this interval
+[18:52:14] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[18:52:14] 00:1d:93:11:22:33: received 2 replies to the replayed broadcast ARP requests
+[18:52:15] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[18:52:16] 00:1d:93:11:22:33: sent 4 broadcasts ARPs this interval
+[18:52:16] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[18:52:16] 00:1d:93:11:22:33: received 3 replies to the replayed broadcast ARP requests
+[18:52:17] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[18:52:18] 00:1d:93:11:22:33: got a reply to broadcast ARP during this interval
+[18:52:18] 00:1d:93:11:22:33: sent 1 broadcasts ARPs this interval
+[18:52:18] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[18:52:18] 00:1d:93:11:22:33: no pairwise IV resets seem to have occured for one interval
+[18:52:19] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[18:52:20] 00:1d:93:11:22:33: sent 2 broadcasts ARPs this interval
+[18:52:20] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[18:52:21] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[18:52:22] 00:1d:93:11:22:33: sent 3 broadcasts ARPs this interval
+[18:52:22] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[18:52:22] 00:1d:93:11:22:33: received 4 replies to the replayed broadcast ARP requests
+[18:52:23] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[18:52:24] 00:1d:93:11:22:33: no pairwise IV resets seem to have occured for one interval
+[18:52:24] 00:1d:93:11:22:33: sent 4 broadcasts ARPs this interval
+[18:52:24] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[18:52:24] 00:1d:93:11:22:33: received 5 replies to the replayed broadcast ARP requests
+[18:52:24] 00:1d:93:11:22:33: Received 5 unique replies to replayed broadcast ARP requests. Client is vulnerable to group
+[18:52:24]                    key reinstallations in the 4-way handshake (or client accepts replayed broadcast frames)!
+[18:52:25] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[18:52:27] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[18:52:29] 00:1d:93:11:22:33: no pairwise IV resets seem to have occured for one interval
+[18:52:29] 00:1d:93:11:22:33: client DOESN'T seem vulnerable to pairwise key reinstallation in the 4-way handshake (using standard attack).
+[18:52:29] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[18:52:31] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[18:52:33] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[18:52:35] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[18:52:37] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[18:52:39] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[18:52:41] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[18:52:43] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[18:52:45] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[18:52:47] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[18:52:49] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[18:52:51] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[18:52:53] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[18:52:55] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[18:52:57] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[18:52:59] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+^Cwlan0: interface state ENABLED->DISABLED
+wlan0: AP-STA-DISCONNECTED 00:1d:93:11:22:33
+Traceback (most recent call last):
+wlan0: AP-DISABLED 
+

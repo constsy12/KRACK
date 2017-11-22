@@ -1,0 +1,125 @@
+root@sw1-ThinkPad-T61p:/home/sw1/KRACK_Test/krackattacks-scripts/krackattack# ./krack-test-client.py --debug
+[17:50:25] Note: disable Wi-Fi in network manager & disable hardware encryption. Both may interfere with this script.
+[17:50:26] Starting hostapd ...
+Configuration file: /home/sw1/KRACK_Test/krackattacks-scripts/krackattack/hostapd.conf
+nl80211: Could not re-add multicast membership for vendor events: -2 (No such file or directory)
+Using interface wlan0 with hwaddr 90:9f:33:ec:7e:d0 and ssid "testnetwork"
+wlan0: interface state UNINITIALIZED->ENABLED
+wlan0: AP-ENABLED 
+
+[17:50:27] Ready. Connect to this Access Point to start the tests. Make sure the client requests an IP using DHCP!
+wlan0: STA 00:1d:93:11:22:33 IEEE 802.11: authenticated
+wlan0: STA 00:1d:93:11:22:33 IEEE 802.11: associated (aid 1)
+[17:51:08] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+wlan0: AP-STA-CONNECTED 00:1d:93:11:22:33
+wlan0: STA 00:1d:93:11:22:33 RADIUS: starting accounting session CB3E2ECBADE362D3
+[17:51:10] 00:1d:93:11:22:33: Hostapd: already installing pairwise key
+[17:51:10] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[17:51:12] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[17:51:13] 00:1d:93:11:22:33: DHCP reply 192.168.100.2 to 00:1d:93:11:22:33
+[17:51:14] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[17:51:14] 00:1d:93:11:22:33: client has IP address -> testing for group key reinstallation in the 4-way handshake
+[17:51:14] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[17:51:16] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[17:51:17] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[17:51:18] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[17:51:18] 00:1d:93:11:22:33: DHCP reply 192.168.100.2 to 00:1d:93:11:22:33
+[17:51:19] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[17:51:20] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[17:51:21] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[17:51:22] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[17:51:23] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[17:51:24] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[17:51:25] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[17:51:26] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[17:51:27] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[17:51:28] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[17:51:29] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[17:51:30] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[17:51:31] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[17:51:32] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[17:51:33] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[17:51:34] 00:1d:93:11:22:33: client DOESN'T seem vulnerable to pairwise key reinstallation in the 4-way handshake (using standard attack).
+[17:51:34] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[17:51:35] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[17:51:36] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[17:51:37] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[17:51:37] 00:1d:93:11:22:33: Received 5 unique replies to replayed broadcast ARP requests. Client is vulnerable to group
+[17:51:37]                    key reinstallations in the 4-way handshake (or client accepts replayed broadcast frames)!
+[17:51:38] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[17:51:40] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[17:51:42] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[17:51:44] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[17:51:46] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[17:51:48] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[17:51:50] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[17:51:52] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[17:51:54] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[17:51:56] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[17:51:58] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[17:52:00] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[17:52:02] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[17:52:04] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[17:52:06] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+wlan0: STA 00:1d:93:11:22:33 IEEE 802.11: authenticated
+wlan0: STA 00:1d:93:11:22:33 IEEE 802.11: associated (aid 1)
+[17:52:08] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[17:52:10] 00:1d:93:11:22:33: Hostapd: already installing pairwise key
+[17:52:10] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[17:52:12] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+^CTraceback (most recent call last):
+  File "./krack-test-client.py", line 617, in <module>
+    attack.run(test_grouphs=test_grouphs, test_tptk=test_tptk)
+  File "./krack-test-client.py", line 530, in run
+    if self.sock_mon in sel[0]: self.handle_mon_rx()
+  File "./krack-test-client.py", line 404, in handle_mon_rx
+    p = self.sock_mon.recv()
+  File "/home/sw1/KRACK_Test/krackattacks-scripts/krackattack/libwifi.py", line 109, in recv
+    return self._strip_fcs(p)
+  File "/home/sw1/KRACK_Test/krackattacks-scripts/krackattack/libwifi.py", line 85, in _strip_fcs
+    rawframe = str(p[RadioTap])
+  File "/usr/lib/python2.7/dist-packages/scapy/packet.py", line 261, in __str__
+    return self.build()
+  File "/usr/lib/python2.7/dist-packages/scapy/packet.py", line 319, in build
+    p = self.do_build()
+  File "/usr/lib/python2.7/dist-packages/scapy/packet.py", line 307, in do_build
+    self = self.__iter__().next()
+  File "/usr/lib/python2.7/dist-packages/scapy/packet.py", line 635, in loop
+    for x in loop(todo[:], done):
+  File "/usr/lib/python2.7/dist-packages/scapy/packet.py", line 635, in loop
+    for x in loop(todo[:], done):
+  File "/usr/lib/python2.7/dist-packages/scapy/packet.py", line 635, in loop
+    for x in loop(todo[:], done):
+  File "/usr/lib/python2.7/dist-packages/scapy/packet.py", line 635, in loop
+    for x in loop(todo[:], done):
+  File "/usr/lib/python2.7/dist-packages/scapy/packet.py", line 635, in loop
+    for x in loop(todo[:], done):
+  File "/usr/lib/python2.7/dist-packages/scapy/packet.py", line 642, in loop
+    for payl in payloads:
+  File "/usr/lib/python2.7/dist-packages/scapy/packet.py", line 635, in loop
+    for x in loop(todo[:], done):
+  File "/usr/lib/python2.7/dist-packages/scapy/packet.py", line 635, in loop
+    for x in loop(todo[:], done):
+  File "/usr/lib/python2.7/dist-packages/scapy/packet.py", line 635, in loop
+    for x in loop(todo[:], done):
+  File "/usr/lib/python2.7/dist-packages/scapy/packet.py", line 635, in loop
+    for x in loop(todo[:], done):
+  File "/usr/lib/python2.7/dist-packages/scapy/packet.py", line 635, in loop
+    for x in loop(todo[:], done):
+  File "/usr/lib/python2.7/dist-packages/scapy/packet.py", line 635, in loop
+    for x in loop(todo[:], done):
+  File "/usr/lib/python2.7/dist-packages/scapy/packet.py", line 635, in loop
+    for x in loop(todo[:], done):
+  File "/usr/lib/python2.7/dist-packages/scapy/packet.py", line 635, in loop
+    for x in loop(todo[:], done):
+  File "/usr/lib/python2.7/dist-packages/scapy/packet.py", line 635, in loop
+wlan0: interface state ENABLED->DISABLED
+    for x in loop(todo[:], done):
+  File "/usr/lib/python2.7/dist-packages/scapy/packet.py", line 635, in loop
+wlan0: AP-STA-DISCONNECTED 00:1d:93:11:22:33
+    for x in loop(todo[:], done):
+  File "/usr/lib/python2.7/dist-packages/scapy/packet.py", line 647, in loop
+    pkt = self.clone_with(payload=payl, **done2)
+  File "/usr/lib/python2.7/dist-packages/scapy/packet.py", line 614, in clone_with
+wlan0: AP-DISABLED 
+

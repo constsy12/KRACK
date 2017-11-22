@@ -1,0 +1,170 @@
+root@sw1-ThinkPad-T61p:/home/sw1/KRACK_Test/krackattacks-scripts/krackattack# ./client.py --group
+[18:15:20] Note: disable Wi-Fi in network manager & disable hardware encryption. Both may interfere with this script.
+[18:15:21] Starting hostapd ...
+Configuration file: /home/sw1/KRACK_Test/krackattacks-scripts/krackattack/hostapd.conf
+nl80211: Could not re-add multicast membership for vendor events: -2 (No such file or directory)
+Using interface wlan0 with hwaddr 90:9f:33:ec:7e:d0 and ssid "testnetwork"
+wlan0: interface state UNINITIALIZED->ENABLED
+wlan0: AP-ENABLED 
+[18:15:22] Hostapd: starting group key handshake tests
+[18:15:22] Ready. Connect to this Access Point to start the tests. Make sure the client requests an IP using DHCP!
+wlan0: STA 00:1d:93:11:22:33 IEEE 802.11: authenticated
+wlan0: STA 00:1d:93:11:22:33 IEEE 802.11: associated (aid 1)
+wlan0: AP-STA-CONNECTED 00:1d:93:11:22:33
+wlan0: STA 00:1d:93:11:22:33 RADIUS: starting accounting session 544DA10050A4F504
+wlan0: STA 00:1d:93:11:22:33 WPA: pairwise key handshake completed (RSN)
+[18:15:55] 00:1d:93:11:22:33: DHCP reply 192.168.100.2 to 00:1d:93:11:22:33
+[18:15:55] 00:1d:93:11:22:33: DHCP reply 192.168.100.2 to 00:1d:93:11:22:33
+[18:15:56] 00:1d:93:11:22:33: client has IP address -> testing for group key reinstallation in the group key handshake
+[18:15:56] 00:1d:93:11:22:33: sent 1 broadcasts ARPs this interval
+[18:15:56] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[18:15:56] 00:1d:93:11:22:33: received 1 replies to the replayed broadcast ARP requests
+[18:15:58] 00:1d:93:11:22:33: sent 2 broadcasts ARPs this interval
+[18:15:58] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+wlan0: STA 00:1d:93:11:22:33 WPA: group key handshake completed (RSN)
+[18:16:00] 00:1d:93:11:22:33: sent 3 broadcasts ARPs this interval
+[18:16:00] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+wlan0: STA 00:1d:93:11:22:33 WPA: group key handshake completed (RSN)
+[18:16:02] 00:1d:93:11:22:33: sent 4 broadcasts ARPs this interval
+[18:16:02] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+wlan0: STA 00:1d:93:11:22:33 WPA: group key handshake completed (RSN)
+[18:16:04] 00:1d:93:11:22:33: got a reply to broadcast ARP during this interval
+[18:16:04] 00:1d:93:11:22:33: sent 1 broadcasts ARPs this interval
+[18:16:04] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+wlan0: STA 00:1d:93:11:22:33 WPA: group key handshake completed (RSN)
+[18:16:06] 00:1d:93:11:22:33: sent 2 broadcasts ARPs this interval
+[18:16:06] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[18:16:06] 00:1d:93:11:22:33: received 2 replies to the replayed broadcast ARP requests
+[18:16:08] 00:1d:93:11:22:33: sent 3 broadcasts ARPs this interval
+[18:16:08] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[18:16:10] 00:1d:93:11:22:33: sent 4 broadcasts ARPs this interval
+[18:16:10] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+wlan0: STA 00:1d:93:11:22:33 WPA: group key handshake completed (RSN)
+wlan0: STA 00:1d:93:11:22:33 WPA: group key handshake completed (RSN)
+[18:16:12] 00:1d:93:11:22:33: got a reply to broadcast ARP during this interval
+[18:16:12] 00:1d:93:11:22:33: sent 1 broadcasts ARPs this interval
+[18:16:12] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[18:16:14] 00:1d:93:11:22:33: sent 2 broadcasts ARPs this interval
+[18:16:14] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[18:16:14] 00:1d:93:11:22:33: received 3 replies to the replayed broadcast ARP requests
+wlan0: STA 00:1d:93:11:22:33 WPA: group key handshake completed (RSN)
+[18:16:16] 00:1d:93:11:22:33: sent 3 broadcasts ARPs this interval
+[18:16:16] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[18:16:18] 00:1d:93:11:22:33: sent 4 broadcasts ARPs this interval
+[18:16:18] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[18:16:20] 00:1d:93:11:22:33: got a reply to broadcast ARP during this interval
+[18:16:20] 00:1d:93:11:22:33: sent 1 broadcasts ARPs this interval
+[18:16:20] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[18:16:22] 00:1d:93:11:22:33: sent 2 broadcasts ARPs this interval
+[18:16:22] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[18:16:24] 00:1d:93:11:22:33: sent 3 broadcasts ARPs this interval
+[18:16:24] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[18:16:26] 00:1d:93:11:22:33: sent 4 broadcasts ARPs this interval
+[18:16:26] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+wlan0: STA 00:1d:93:11:22:33 IEEE 802.11: authenticated
+wlan0: STA 00:1d:93:11:22:33 IEEE 802.11: associated (aid 1)
+wlan0: STA 00:1d:93:11:22:33 RADIUS: starting accounting session 544DA10050A4F504
+wlan0: STA 00:1d:93:11:22:33 WPA: pairwise key handshake completed (RSN)
+[18:16:28] 00:1d:93:11:22:33: DHCP reply 192.168.100.2 to 00:1d:93:11:22:33
+[18:16:28] 00:1d:93:11:22:33: DHCP reply 192.168.100.2 to 00:1d:93:11:22:33
+[18:16:29] 00:1d:93:11:22:33: no group IV resets seem to have occured for 0 interval(s)
+[18:16:29] 00:1d:93:11:22:33: sent 1 broadcasts ARPs this interval
+[18:16:29] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+wlan0: STA 00:1d:93:11:22:33 WPA: group key handshake completed (RSN)
+[18:16:31] 00:1d:93:11:22:33: sent 2 broadcasts ARPs this interval
+[18:16:31] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+wlan0: STA 00:1d:93:11:22:33 WPA: group key handshake completed (RSN)
+wlan0: STA 00:1d:93:11:22:33 WPA: group key handshake completed (RSN)
+[18:16:33] 00:1d:93:11:22:33: sent 3 broadcasts ARPs this interval
+[18:16:33] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[18:16:35] 00:1d:93:11:22:33: sent 4 broadcasts ARPs this interval
+[18:16:35] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+wlan0: STA 00:1d:93:11:22:33 WPA: group key handshake completed (RSN)
+[18:16:37] 00:1d:93:11:22:33: no group IV resets seem to have occured for 1 interval(s)
+[18:16:37] 00:1d:93:11:22:33: sent 1 broadcasts ARPs this interval
+[18:16:37] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+wlan0: STA 00:1d:93:11:22:33 WPA: group key handshake completed (RSN)
+[18:16:39] 00:1d:93:11:22:33: sent 2 broadcasts ARPs this interval
+[18:16:39] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[18:16:39] 00:1d:93:11:22:33: received 4 replies to the replayed broadcast ARP requests
+[18:16:41] 00:1d:93:11:22:33: sent 3 broadcasts ARPs this interval
+[18:16:41] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[18:16:41] 00:1d:93:11:22:33: received 5 replies to the replayed broadcast ARP requests
+[18:16:41] 00:1d:93:11:22:33: Received 5 unique replies to replayed broadcast ARP requests. Client is vulnerable to group
+[18:16:41]                    key reinstallations in the group key handshake (or client accepts replayed broadcast frames)!
+wlan0: STA 00:1d:93:11:22:33 WPA: group key handshake completed (RSN)
+wlan0: STA 00:1d:93:11:22:33 WPA: group key handshake completed (RSN)
+wlan0: STA 00:1d:93:11:22:33 WPA: group key handshake completed (RSN)
+wlan0: STA 00:1d:93:11:22:33 WPA: group key handshake completed (RSN)
+wlan0: STA 00:1d:93:11:22:33 IEEE 802.11: authenticated
+wlan0: STA 00:1d:93:11:22:33 IEEE 802.11: associated (aid 1)
+wlan0: STA 00:1d:93:11:22:33 RADIUS: starting accounting session 544DA10050A4F504
+wlan0: STA 00:1d:93:11:22:33 WPA: pairwise key handshake completed (RSN)
+wlan0: AP-STA-DISCONNECTED 00:1d:93:11:22:33
+wlan0: STA 00:1d:93:11:22:33 IEEE 802.11: authenticated
+wlan0: STA 00:1d:93:11:22:33 IEEE 802.11: associated (aid 1)
+wlan0: STA 00:1d:93:11:22:33 IEEE 802.11: authenticated
+wlan0: STA 00:1d:93:11:22:33 IEEE 802.11: associated (aid 1)
+wlan0: AP-STA-CONNECTED 00:1d:93:11:22:33
+wlan0: STA 00:1d:93:11:22:33 RADIUS: starting accounting session D2A8D6504C0958E0
+wlan0: STA 00:1d:93:11:22:33 WPA: pairwise key handshake completed (RSN)
+[18:17:09] 00:1d:93:11:22:33: DHCP reply 192.168.100.2 to 00:1d:93:11:22:33
+[18:17:09] 00:1d:93:11:22:33: client has IP address -> testing for group key reinstallation in the group key handshake
+[18:17:09] 00:1d:93:11:22:33: sent 1 broadcasts ARPs this interval
+[18:17:09] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[18:17:09] 00:1d:93:11:22:33: DHCP reply 192.168.100.2 to 00:1d:93:11:22:33
+wlan0: STA 00:1d:93:11:22:33 WPA: group key handshake completed (RSN)
+[18:17:11] 00:1d:93:11:22:33: sent 2 broadcasts ARPs this interval
+[18:17:11] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[18:17:11] 00:1d:93:11:22:33: received 1 replies to the replayed broadcast ARP requests
+[18:17:13] 00:1d:93:11:22:33: sent 3 broadcasts ARPs this interval
+[18:17:13] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+wlan0: STA 00:1d:93:11:22:33 WPA: group key handshake completed (RSN)
+[18:17:16] 00:1d:93:11:22:33: sent 4 broadcasts ARPs this interval
+[18:17:16] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[18:17:16] 00:1d:93:11:22:33: received 2 replies to the replayed broadcast ARP requests
+[18:17:18] 00:1d:93:11:22:33: got a reply to broadcast ARP during this interval
+[18:17:18] 00:1d:93:11:22:33: sent 1 broadcasts ARPs this interval
+[18:17:18] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+wlan0: STA 00:1d:93:11:22:33 WPA: group key handshake completed (RSN)
+[18:17:20] 00:1d:93:11:22:33: sent 2 broadcasts ARPs this interval
+[18:17:20] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[18:17:20] 00:1d:93:11:22:33: received 3 replies to the replayed broadcast ARP requests
+wlan0: STA 00:1d:93:11:22:33 WPA: group key handshake completed (RSN)
+[18:17:22] 00:1d:93:11:22:33: sent 3 broadcasts ARPs this interval
+[18:17:22] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[18:17:22] 00:1d:93:11:22:33: received 4 replies to the replayed broadcast ARP requests
+[18:17:24] 00:1d:93:11:22:33: sent 4 broadcasts ARPs this interval
+[18:17:24] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[18:17:26] 00:1d:93:11:22:33: got a reply to broadcast ARP during this interval
+[18:17:26] 00:1d:93:11:22:33: sent 1 broadcasts ARPs this interval
+[18:17:26] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+wlan0: STA 00:1d:93:11:22:33 WPA: group key handshake completed (RSN)
+wlan0: STA 00:1d:93:11:22:33 WPA: group key handshake completed (RSN)
+[18:17:28] 00:1d:93:11:22:33: sent 2 broadcasts ARPs this interval
+[18:17:28] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[18:17:28] 00:1d:93:11:22:33: received 5 replies to the replayed broadcast ARP requests
+[18:17:28] 00:1d:93:11:22:33: Received 5 unique replies to replayed broadcast ARP requests. Client is vulnerable to group
+[18:17:28]                    key reinstallations in the group key handshake (or client accepts replayed broadcast frames)!
+wlan0: STA 00:1d:93:11:22:33 WPA: group key handshake completed (RSN)
+wlan0: STA 00:1d:93:11:22:33 WPA: group key handshake completed (RSN)
+wlan0: STA 00:1d:93:11:22:33 WPA: group key handshake completed (RSN)
+^Cwlan0: interface state ENABLED->DISABLED
+Traceback (most recent call last):
+  File "./client.py", line 617, in <module>
+wlan0: AP-STA-DISCONNECTED 00:1d:93:11:22:33
+    attack.run(test_grouphs=test_grouphs, test_tptk=test_tptk)
+  File "./client.py", line 530, in run
+    if self.sock_mon in sel[0]: self.handle_mon_rx()
+  File "./client.py", line 404, in handle_mon_rx
+wlan0: AP-DISABLED 
+    p = self.sock_mon.recv()
+  File "/home/sw1/KRACK_Test/krackattacks-scripts/krackattack/libwifi.py", line 101, in recv
+    p = L2Socket.recv(self, x)
+  File "/usr/lib/python2.7/dist-packages/scapy/arch/linux.py", line 435, in recv
+    q = self.LL(pkt)
+  File "/usr/lib/python2.7/dist-packages/scapy/base_classes.py", line 198, in __call__
+    i.__init__(*args, **kargs)
+  File "/usr/lib/python2.7/dist-packages/scapy/packet.py", line 65, in __init__
+    self.time  = time.time()
+

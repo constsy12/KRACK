@@ -1,0 +1,95 @@
+root@sw1-ThinkPad-T61p:/home/sw1/KRACK_Test/krackattacks-scripts/krackattack# ./client.py --tptk-rand
+[18:18:37] Note: disable Wi-Fi in network manager & disable hardware encryption. Both may interfere with this script.
+[18:18:38] Starting hostapd ...
+Configuration file: /home/sw1/KRACK_Test/krackattacks-scripts/krackattack/hostapd.conf
+nl80211: Could not re-add multicast membership for vendor events: -2 (No such file or directory)
+Using interface wlan0 with hwaddr 90:9f:33:ec:7e:d0 and ssid "testnetwork"
+wlan0: interface state UNINITIALIZED->ENABLED
+wlan0: AP-ENABLED 
+[18:18:39] Ready. Connect to this Access Point to start the tests. Make sure the client requests an IP using DHCP!
+wlan0: STA 00:1d:93:11:22:33 IEEE 802.11: authenticated
+wlan0: STA 00:1d:93:11:22:33 IEEE 802.11: associated (aid 1)
+[18:19:44] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+wlan0: AP-STA-CONNECTED 00:1d:93:11:22:33
+wlan0: STA 00:1d:93:11:22:33 RADIUS: starting accounting session 1F033732DAC0CA0D
+[18:19:46] 00:1d:93:11:22:33: Hostapd: already installing pairwise key
+[18:19:46] 00:1d:93:11:22:33: Hostapd: Injecting Msg1 (with random ANonce) before Msg3 to test TPTK construction attack
+[18:19:46] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[18:19:48] 00:1d:93:11:22:33: Hostapd: Injecting Msg1 (with random ANonce) before Msg3 to test TPTK construction attack
+[18:19:48] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[18:19:49] 00:1d:93:11:22:33: no pairwise IV resets seem to have occured for one interval
+[18:19:49] 00:1d:93:11:22:33: DHCP reply 192.168.100.2 to 00:1d:93:11:22:33
+[18:19:49] 00:1d:93:11:22:33: DHCP reply 192.168.100.2 to 00:1d:93:11:22:33
+[18:19:49] 00:1d:93:11:22:33: client has IP address -> testing for group key reinstallation in the 4-way handshake
+[18:19:49] 00:1d:93:11:22:33: sent 1 broadcasts ARPs this interval
+[18:19:49] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[18:19:50] 00:1d:93:11:22:33: Hostapd: Injecting Msg1 (with random ANonce) before Msg3 to test TPTK construction attack
+[18:19:50] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[18:19:51] 00:1d:93:11:22:33: sent 2 broadcasts ARPs this interval
+[18:19:51] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[18:19:51] 00:1d:93:11:22:33: received 1 replies to the replayed broadcast ARP requests
+[18:19:52] 00:1d:93:11:22:33: Hostapd: Injecting Msg1 (with random ANonce) before Msg3 to test TPTK construction attack
+[18:19:52] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[18:19:53] 00:1d:93:11:22:33: sent 3 broadcasts ARPs this interval
+[18:19:53] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[18:19:53] 00:1d:93:11:22:33: received 2 replies to the replayed broadcast ARP requests
+[18:19:54] 00:1d:93:11:22:33: Hostapd: Injecting Msg1 (with random ANonce) before Msg3 to test TPTK construction attack
+[18:19:54] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[18:19:54] 00:1d:93:11:22:33: no pairwise IV resets seem to have occured for one interval
+[18:19:55] 00:1d:93:11:22:33: sent 4 broadcasts ARPs this interval
+[18:19:55] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[18:19:55] 00:1d:93:11:22:33: received 3 replies to the replayed broadcast ARP requests
+[18:19:56] 00:1d:93:11:22:33: Hostapd: Injecting Msg1 (with random ANonce) before Msg3 to test TPTK construction attack
+[18:19:56] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[18:19:57] 00:1d:93:11:22:33: got a reply to broadcast ARP during this interval
+[18:19:57] 00:1d:93:11:22:33: sent 1 broadcasts ARPs this interval
+[18:19:57] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[18:19:57] 00:1d:93:11:22:33: received 4 replies to the replayed broadcast ARP requests
+[18:19:58] 00:1d:93:11:22:33: Hostapd: Injecting Msg1 (with random ANonce) before Msg3 to test TPTK construction attack
+[18:19:58] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[18:19:59] 00:1d:93:11:22:33: sent 2 broadcasts ARPs this interval
+[18:19:59] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[18:20:00] 00:1d:93:11:22:33: no pairwise IV resets seem to have occured for one interval
+[18:20:00] 00:1d:93:11:22:33: Hostapd: Injecting Msg1 (with random ANonce) before Msg3 to test TPTK construction attack
+[18:20:00] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[18:20:01] 00:1d:93:11:22:33: sent 3 broadcasts ARPs this interval
+[18:20:01] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[18:20:02] 00:1d:93:11:22:33: Hostapd: Injecting Msg1 (with random ANonce) before Msg3 to test TPTK construction attack
+[18:20:02] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[18:20:03] 00:1d:93:11:22:33: sent 4 broadcasts ARPs this interval
+[18:20:03] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[18:20:03] 00:1d:93:11:22:33: received 5 replies to the replayed broadcast ARP requests
+[18:20:03] 00:1d:93:11:22:33: Received 5 unique replies to replayed broadcast ARP requests. Client is vulnerable to group
+[18:20:03]                    key reinstallations in the 4-way handshake (or client accepts replayed broadcast frames)!
+[18:20:04] 00:1d:93:11:22:33: Hostapd: Injecting Msg1 (with random ANonce) before Msg3 to test TPTK construction attack
+[18:20:04] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[18:20:05] 00:1d:93:11:22:33: no pairwise IV resets seem to have occured for one interval
+[18:20:06] 00:1d:93:11:22:33: Hostapd: Injecting Msg1 (with random ANonce) before Msg3 to test TPTK construction attack
+[18:20:06] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[18:20:08] 00:1d:93:11:22:33: Hostapd: Injecting Msg1 (with random ANonce) before Msg3 to test TPTK construction attack
+[18:20:08] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[18:20:10] 00:1d:93:11:22:33: no pairwise IV resets seem to have occured for one interval
+[18:20:10] 00:1d:93:11:22:33: client DOESN'T seem vulnerable to pairwise key reinstallation in the 4-way handshake (using TPTK-RAND attack).
+[18:20:10] 00:1d:93:11:22:33: Hostapd: Injecting Msg1 (with random ANonce) before Msg3 to test TPTK construction attack
+[18:20:10] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[18:20:12] 00:1d:93:11:22:33: Hostapd: Injecting Msg1 (with random ANonce) before Msg3 to test TPTK construction attack
+[18:20:12] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[18:20:14] 00:1d:93:11:22:33: Hostapd: Injecting Msg1 (with random ANonce) before Msg3 to test TPTK construction attack
+[18:20:14] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[18:20:16] 00:1d:93:11:22:33: Hostapd: Injecting Msg1 (with random ANonce) before Msg3 to test TPTK construction attack
+[18:20:16] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[18:20:18] 00:1d:93:11:22:33: Hostapd: Injecting Msg1 (with random ANonce) before Msg3 to test TPTK construction attack
+[18:20:18] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[18:20:20] 00:1d:93:11:22:33: Hostapd: Injecting Msg1 (with random ANonce) before Msg3 to test TPTK construction attack
+[18:20:20] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[18:20:22] 00:1d:93:11:22:33: Hostapd: Injecting Msg1 (with random ANonce) before Msg3 to test TPTK construction attack
+[18:20:22] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[18:20:24] 00:1d:93:11:22:33: Hostapd: Injecting Msg1 (with random ANonce) before Msg3 to test TPTK construction attack
+[18:20:24] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[18:20:26] 00:1d:93:11:22:33: Hostapd: Injecting Msg1 (with random ANonce) before Msg3 to test TPTK construction attack
+[18:20:26] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+^Cwlan0: interface state ENABLED->DISABLED
+wlan0: AP-STA-DISCONNECTED 00:1d:93:11:22:33
+Traceback (most recent call last):
+wlan0: AP-DISABLED 
+

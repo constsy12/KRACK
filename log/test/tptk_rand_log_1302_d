@@ -1,0 +1,67 @@
+root@sw1-ThinkPad-T61p:/home/sw1/KRACK_Test/krackattacks-scripts/krackattack# ./client.py --tptk-rand --debug
+[19:09:10] Note: disable Wi-Fi in network manager & disable hardware encryption. Both may interfere with this script.
+[19:09:11] Starting hostapd ...
+Configuration file: /home/sw1/KRACK_Test/krackattacks-scripts/krackattack/hostapd.conf
+nl80211: Could not re-add multicast membership for vendor events: -2 (No such file or directory)
+Using interface wlan0 with hwaddr 90:9f:33:ec:7e:d0 and ssid "testnetwork"
+wlan0: interface state UNINITIALIZED->ENABLED
+wlan0: AP-ENABLED 
+[19:09:12] Ready. Connect to this Access Point to start the tests. Make sure the client requests an IP using DHCP!
+wlan0: STA 00:1d:93:11:22:33 IEEE 802.11: authenticated
+wlan0: STA 00:1d:93:11:22:33 IEEE 802.11: associated (aid 1)
+[19:10:03] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+wlan0: AP-STA-CONNECTED 00:1d:93:11:22:33
+wlan0: STA 00:1d:93:11:22:33 RADIUS: starting accounting session 32E882458F0F9BB8
+[19:10:05] 00:1d:93:11:22:33: Hostapd: already installing pairwise key
+[19:10:05] 00:1d:93:11:22:33: Hostapd: Injecting Msg1 (with random ANonce) before Msg3 to test TPTK construction attack
+[19:10:05] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+wlan0: STA 00:1d:93:11:22:33 WPA: received EAPOL-Key msg 2/4 in invalid state (10) - dropped - MIC -1
+wlan0: AP-STA-DISCONNECTED 00:1d:93:11:22:33
+wlan0: STA 00:1d:93:11:22:33 IEEE 802.11: authenticated
+wlan0: STA 00:1d:93:11:22:33 IEEE 802.11: associated (aid 1)
+[19:10:24] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+wlan0: AP-STA-CONNECTED 00:1d:93:11:22:33
+wlan0: STA 00:1d:93:11:22:33 RADIUS: starting accounting session 65B7AAB5AA2F5AC6
+wlan0: AP-STA-DISCONNECTED 00:1d:93:11:22:33
+wlan0: STA 00:1d:93:11:22:33 IEEE 802.11: authenticated
+wlan0: STA 00:1d:93:11:22:33 IEEE 802.11: associated (aid 1)
+[19:10:46] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+wlan0: AP-STA-CONNECTED 00:1d:93:11:22:33
+wlan0: STA 00:1d:93:11:22:33 RADIUS: starting accounting session D75B28E9C4B82781
+[19:10:48] 00:1d:93:11:22:33: Hostapd: already installing pairwise key
+[19:10:48] 00:1d:93:11:22:33: Hostapd: Injecting Msg1 (with random ANonce) before Msg3 to test TPTK construction attack
+[19:10:48] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+wlan0: STA 00:1d:93:11:22:33 WPA: received EAPOL-Key msg 2/4 in invalid state (10) - dropped - MIC -1
+wlan0: AP-STA-DISCONNECTED 00:1d:93:11:22:33
+wlan0: STA 00:1d:93:11:22:33 IEEE 802.11: authenticated
+wlan0: STA 00:1d:93:11:22:33 IEEE 802.11: associated (aid 1)
+[19:10:52] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+wlan0: AP-STA-CONNECTED 00:1d:93:11:22:33
+wlan0: STA 00:1d:93:11:22:33 RADIUS: starting accounting session 4FEFBA8AF528D47A
+[19:10:54] 00:1d:93:11:22:33: Hostapd: already installing pairwise key
+[19:10:54] 00:1d:93:11:22:33: Hostapd: Injecting Msg1 (with random ANonce) before Msg3 to test TPTK construction attack
+[19:10:54] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+wlan0: STA 00:1d:93:11:22:33 WPA: received EAPOL-Key msg 2/4 in invalid state (10) - dropped - MIC -1
+wlan0: AP-STA-DISCONNECTED 00:1d:93:11:22:33
+wlan0: STA 00:1d:93:11:22:33 IEEE 802.11: authenticated
+wlan0: STA 00:1d:93:11:22:33 IEEE 802.11: associated (aid 1)
+[19:10:59] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+wlan0: AP-STA-CONNECTED 00:1d:93:11:22:33
+wlan0: STA 00:1d:93:11:22:33 RADIUS: starting accounting session A3DDD62391E6A085
+[19:11:01] 00:1d:93:11:22:33: Hostapd: already installing pairwise key
+[19:11:01] 00:1d:93:11:22:33: Hostapd: Injecting Msg1 (with random ANonce) before Msg3 to test TPTK construction attack
+[19:11:01] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+wlan0: AP-STA-DISCONNECTED 00:1d:93:11:22:33
+wlan0: STA 00:1d:93:11:22:33 IEEE 802.11: authenticated
+wlan0: STA 00:1d:93:11:22:33 IEEE 802.11: associated (aid 1)
+[19:11:05] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+wlan0: AP-STA-CONNECTED 00:1d:93:11:22:33
+wlan0: STA 00:1d:93:11:22:33 RADIUS: starting accounting session 7C693380B529C356
+[19:11:07] 00:1d:93:11:22:33: Hostapd: already installing pairwise key
+[19:11:07] 00:1d:93:11:22:33: Hostapd: Injecting Msg1 (with random ANonce) before Msg3 to test TPTK construction attack
+[19:11:07] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+wlan0: STA 00:1d:93:11:22:33 WPA: received EAPOL-Key msg 2/4 in invalid state (10) - dropped - MIC -1
+wlan0: AP-STA-DISCONNECTED 00:1d:93:11:22:33
+^Cwlan0: interface state ENABLED->DISABLED
+wlan0: AP-DISABLED 
+
