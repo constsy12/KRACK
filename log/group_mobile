@@ -1,0 +1,53 @@
+root@sw1-ThinkPad-T61p:/home/sw1/KRACK_Test/krackattacks-scripts/krackattack# ./krack-test-client.py --group
+[15:01:17] Note: disable Wi-Fi in network manager & disable hardware encryption. Both may interfere with this script.
+[15:01:18] Starting hostapd ...
+Configuration file: /home/sw1/KRACK_Test/krackattacks-scripts/krackattack/hostapd.conf
+nl80211: Could not re-add multicast membership for vendor events: -2 (No such file or directory)
+Using interface wlan0 with hwaddr 90:9f:33:ec:7e:d0 and ssid "testnetwork"
+wlan0: interface state UNINITIALIZED->ENABLED
+wlan0: AP-ENABLED 
+[15:01:20] Hostapd: starting group key handshake tests
+[15:01:20] Ready. Connect to this Access Point to start the tests. Make sure the client requests an IP using DHCP!
+wlan0: STA f8:95:c7:fc:f7:5b IEEE 802.11: authenticated
+wlan0: STA f8:95:c7:fc:f7:5b IEEE 802.11: associated (aid 1)
+wlan0: AP-STA-CONNECTED f8:95:c7:fc:f7:5b
+wlan0: STA f8:95:c7:fc:f7:5b RADIUS: starting accounting session 11C0B207A439E920
+wlan0: STA f8:95:c7:fc:f7:5b WPA: pairwise key handshake completed (RSN)
+wlan0: STA f8:95:c7:fc:f7:5b WPA: group key handshake completed (RSN)
+[15:01:52] f8:95:c7:fc:f7:5b: DHCP reply 192.168.100.2 to f8:95:c7:fc:f7:5b
+[15:01:53] f8:95:c7:fc:f7:5b: client has IP address -> testing for group key reinstallation in the group key handshake
+[15:01:53] f8:95:c7:fc:f7:5b: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+wlan0: STA f8:95:c7:fc:f7:5b WPA: group key handshake completed (RSN)
+[15:01:55] f8:95:c7:fc:f7:5b: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+wlan0: STA f8:95:c7:fc:f7:5b WPA: group key handshake completed (RSN)
+[15:01:57] f8:95:c7:fc:f7:5b: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+wlan0: STA f8:95:c7:fc:f7:5b WPA: group key handshake completed (RSN)
+[15:01:59] f8:95:c7:fc:f7:5b: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+wlan0: STA f8:95:c7:fc:f7:5b WPA: group key handshake completed (RSN)
+[15:02:01] f8:95:c7:fc:f7:5b: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+wlan0: STA f8:95:c7:fc:f7:5b WPA: group key handshake completed (RSN)
+[15:02:03] f8:95:c7:fc:f7:5b: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[15:02:03] f8:95:c7:fc:f7:5b: Received 5 unique replies to replayed broadcast ARP requests. Client is vulnerable to group
+[15:02:03]                    key reinstallations in the group key handshake (or client accepts replayed broadcast frames)!
+wlan0: STA f8:95:c7:fc:f7:5b WPA: group key handshake completed (RSN)
+wlan0: STA f8:95:c7:fc:f7:5b WPA: group key handshake completed (RSN)
+wlan0: STA f8:95:c7:fc:f7:5b WPA: group key handshake completed (RSN)
+wlan0: STA f8:95:c7:fc:f7:5b WPA: group key handshake completed (RSN)
+wlan0: STA f8:95:c7:fc:f7:5b WPA: group key handshake completed (RSN)
+wlan0: STA f8:95:c7:fc:f7:5b WPA: group key handshake completed (RSN)
+wlan0: STA f8:95:c7:fc:f7:5b WPA: group key handshake completed (RSN)
+wlan0: STA f8:95:c7:fc:f7:5b WPA: group key handshake completed (RSN)
+wlan0: STA f8:95:c7:fc:f7:5b WPA: group key handshake completed (RSN)
+wlan0: STA f8:95:c7:fc:f7:5b WPA: group key handshake completed (RSN)
+wlan0: STA f8:95:c7:fc:f7:5b WPA: group key handshake completed (RSN)
+wlan0: STA f8:95:c7:fc:f7:5b WPA: group key handshake completed (RSN)
+wlan0: STA f8:95:c7:fc:f7:5b WPA: group key handshake completed (RSN)
+wlan0: STA f8:95:c7:fc:f7:5b WPA: group key handshake completed (RSN)
+wlan0: STA f8:95:c7:fc:f7:5b WPA: group key handshake completed (RSN)
+wlan0: STA f8:95:c7:fc:f7:5b WPA: group key handshake completed (RSN)
+wlan0: STA f8:95:c7:fc:f7:5b WPA: group key handshake completed (RSN)
+wlan0: STA f8:95:c7:fc:f7:5b WPA: group key handshake completed (RSN)
+^CTraceback (most recent call last):
+  File "./krack-test-client.py", line 617, in <module>
+wlan0: interface state ENABLED->DISABLED
+

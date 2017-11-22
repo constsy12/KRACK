@@ -1,0 +1,340 @@
+root@sw1-ThinkPad-T61p:/home/sw1/KRACK_Test/krackattacks-scripts/krackattack# ./krack-test-client.py --tptk
+[15:13:40] Note: disable Wi-Fi in network manager & disable hardware encryption. Both may interfere with this script.
+[15:13:41] Starting hostapd ...
+Configuration file: /home/sw1/KRACK_Test/krackattacks-scripts/krackattack/hostapd.conf
+nl80211: Could not re-add multicast membership for vendor events: -2 (No such file or directory)
+Using interface wlan0 with hwaddr 90:9f:33:ec:7e:d0 and ssid "testnetwork"
+wlan0: interface state UNINITIALIZED->ENABLED
+wlan0: AP-ENABLED 
+[15:13:42] Ready. Connect to this Access Point to start the tests. Make sure the client requests an IP using DHCP!
+wlan0: STA f8:95:c7:fc:f7:5b IEEE 802.11: authenticated
+wlan0: STA f8:95:c7:fc:f7:5b IEEE 802.11: associated (aid 1)
+[15:14:41] f8:95:c7:fc:f7:5b: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+wlan0: AP-STA-CONNECTED f8:95:c7:fc:f7:5b
+wlan0: STA f8:95:c7:fc:f7:5b RADIUS: starting accounting session CE8D865FCC655B64
+[15:14:43] f8:95:c7:fc:f7:5b: Hostapd: already installing pairwise key
+[15:14:43] f8:95:c7:fc:f7:5b: Hostapd: Injecting Msg1 (with same ANonce) before Msg3 to test TPTK construction attack
+[15:14:43] f8:95:c7:fc:f7:5b: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+wlan0: STA f8:95:c7:fc:f7:5b WPA: received EAPOL-Key msg 2/4 in invalid state (10) - dropped - MIC -1
+[15:14:44] f8:95:c7:fc:f7:5b: IV reuse detected (IV=1, seq=10). Client is vulnerable to pairwise key reinstallations in the 4-way handshake!
+[15:14:45] f8:95:c7:fc:f7:5b: Hostapd: Injecting Msg1 (with same ANonce) before Msg3 to test TPTK construction attack
+[15:14:45] f8:95:c7:fc:f7:5b: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[15:14:46] f8:95:c7:fc:f7:5b: DHCP reply 192.168.100.2 to f8:95:c7:fc:f7:5b
+[15:14:46] f8:95:c7:fc:f7:5b: client has IP address -> testing for group key reinstallation in the 4-way handshake
+[15:14:46] f8:95:c7:fc:f7:5b: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[15:14:47] f8:95:c7:fc:f7:5b: Hostapd: Injecting Msg1 (with same ANonce) before Msg3 to test TPTK construction attack
+[15:14:47] f8:95:c7:fc:f7:5b: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[15:14:48] f8:95:c7:fc:f7:5b: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[15:14:49] f8:95:c7:fc:f7:5b: Hostapd: Injecting Msg1 (with same ANonce) before Msg3 to test TPTK construction attack
+[15:14:49] f8:95:c7:fc:f7:5b: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[15:14:50] f8:95:c7:fc:f7:5b: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[15:14:51] f8:95:c7:fc:f7:5b: Hostapd: Injecting Msg1 (with same ANonce) before Msg3 to test TPTK construction attack
+[15:14:51] f8:95:c7:fc:f7:5b: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[15:14:52] f8:95:c7:fc:f7:5b: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[15:14:53] f8:95:c7:fc:f7:5b: Hostapd: Injecting Msg1 (with same ANonce) before Msg3 to test TPTK construction attack
+[15:14:53] f8:95:c7:fc:f7:5b: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[15:14:54] f8:95:c7:fc:f7:5b: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[15:14:55] f8:95:c7:fc:f7:5b: Hostapd: Injecting Msg1 (with same ANonce) before Msg3 to test TPTK construction attack
+[15:14:55] f8:95:c7:fc:f7:5b: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[15:14:56] f8:95:c7:fc:f7:5b: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[15:14:57] f8:95:c7:fc:f7:5b: Hostapd: Injecting Msg1 (with same ANonce) before Msg3 to test TPTK construction attack
+[15:14:57] f8:95:c7:fc:f7:5b: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[15:14:58] f8:95:c7:fc:f7:5b: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[15:14:59] f8:95:c7:fc:f7:5b: Hostapd: Injecting Msg1 (with same ANonce) before Msg3 to test TPTK construction attack
+[15:14:59] f8:95:c7:fc:f7:5b: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[15:15:00] f8:95:c7:fc:f7:5b: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[15:15:00] f8:95:c7:fc:f7:5b: Received 5 unique replies to replayed broadcast ARP requests. Client is vulnerable to group
+[15:15:00]                    key reinstallations in the 4-way handshake (or client accepts replayed broadcast frames)!
+[15:15:01] f8:95:c7:fc:f7:5b: Hostapd: Injecting Msg1 (with same ANonce) before Msg3 to test TPTK construction attack
+[15:15:02] f8:95:c7:fc:f7:5b: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[15:15:04] f8:95:c7:fc:f7:5b: Hostapd: Injecting Msg1 (with same ANonce) before Msg3 to test TPTK construction attack
+[15:15:04] f8:95:c7:fc:f7:5b: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[15:15:06] f8:95:c7:fc:f7:5b: Hostapd: Injecting Msg1 (with same ANonce) before Msg3 to test TPTK construction attack
+[15:15:06] f8:95:c7:fc:f7:5b: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[15:15:08] f8:95:c7:fc:f7:5b: Hostapd: Injecting Msg1 (with same ANonce) before Msg3 to test TPTK construction attack
+[15:15:08] f8:95:c7:fc:f7:5b: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[15:15:10] f8:95:c7:fc:f7:5b: Hostapd: Injecting Msg1 (with same ANonce) before Msg3 to test TPTK construction attack
+[15:15:10] f8:95:c7:fc:f7:5b: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[15:15:12] f8:95:c7:fc:f7:5b: Hostapd: Injecting Msg1 (with same ANonce) before Msg3 to test TPTK construction attack
+[15:15:12] f8:95:c7:fc:f7:5b: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[15:15:14] f8:95:c7:fc:f7:5b: Hostapd: Injecting Msg1 (with same ANonce) before Msg3 to test TPTK construction attack
+[15:15:14] f8:95:c7:fc:f7:5b: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[15:15:16] f8:95:c7:fc:f7:5b: Hostapd: Injecting Msg1 (with same ANonce) before Msg3 to test TPTK construction attack
+[15:15:16] f8:95:c7:fc:f7:5b: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[15:15:18] f8:95:c7:fc:f7:5b: Hostapd: Injecting Msg1 (with same ANonce) before Msg3 to test TPTK construction attack
+[15:15:18] f8:95:c7:fc:f7:5b: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[15:15:20] f8:95:c7:fc:f7:5b: Hostapd: Injecting Msg1 (with same ANonce) before Msg3 to test TPTK construction attack
+[15:15:20] f8:95:c7:fc:f7:5b: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[15:15:22] f8:95:c7:fc:f7:5b: Hostapd: Injecting Msg1 (with same ANonce) before Msg3 to test TPTK construction attack
+[15:15:22] f8:95:c7:fc:f7:5b: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[15:15:24] f8:95:c7:fc:f7:5b: Hostapd: Injecting Msg1 (with same ANonce) before Msg3 to test TPTK construction attack
+[15:15:24] f8:95:c7:fc:f7:5b: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[15:15:26] f8:95:c7:fc:f7:5b: Hostapd: Injecting Msg1 (with same ANonce) before Msg3 to test TPTK construction attack
+[15:15:26] f8:95:c7:fc:f7:5b: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[15:15:28] f8:95:c7:fc:f7:5b: Hostapd: Injecting Msg1 (with same ANonce) before Msg3 to test TPTK construction attack
+[15:15:28] f8:95:c7:fc:f7:5b: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[15:15:30] f8:95:c7:fc:f7:5b: Hostapd: Injecting Msg1 (with same ANonce) before Msg3 to test TPTK construction attack
+[15:15:30] f8:95:c7:fc:f7:5b: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[15:15:32] f8:95:c7:fc:f7:5b: Hostapd: Injecting Msg1 (with same ANonce) before Msg3 to test TPTK construction attack
+[15:15:32] f8:95:c7:fc:f7:5b: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[15:15:34] f8:95:c7:fc:f7:5b: Hostapd: Injecting Msg1 (with same ANonce) before Msg3 to test TPTK construction attack
+[15:15:34] f8:95:c7:fc:f7:5b: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[15:15:36] f8:95:c7:fc:f7:5b: Hostapd: Injecting Msg1 (with same ANonce) before Msg3 to test TPTK construction attack
+[15:15:36] f8:95:c7:fc:f7:5b: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[15:15:38] f8:95:c7:fc:f7:5b: Hostapd: Injecting Msg1 (with same ANonce) before Msg3 to test TPTK construction attack
+[15:15:38] f8:95:c7:fc:f7:5b: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+wlan0: STA f8:95:c7:fc:f7:5b WPA: received EAPOL-Key msg 2/4 in invalid state (10) - dropped - MIC -1
+[15:15:40] f8:95:c7:fc:f7:5b: Hostapd: Injecting Msg1 (with same ANonce) before Msg3 to test TPTK construction attack
+[15:15:40] f8:95:c7:fc:f7:5b: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[15:15:42] f8:95:c7:fc:f7:5b: Hostapd: Injecting Msg1 (with same ANonce) before Msg3 to test TPTK construction attack
+[15:15:42] f8:95:c7:fc:f7:5b: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[15:15:44] f8:95:c7:fc:f7:5b: Hostapd: Injecting Msg1 (with same ANonce) before Msg3 to test TPTK construction attack
+[15:15:44] f8:95:c7:fc:f7:5b: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[15:15:46] f8:95:c7:fc:f7:5b: Hostapd: Injecting Msg1 (with same ANonce) before Msg3 to test TPTK construction attack
+[15:15:46] f8:95:c7:fc:f7:5b: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[15:15:48] f8:95:c7:fc:f7:5b: Hostapd: Injecting Msg1 (with same ANonce) before Msg3 to test TPTK construction attack
+[15:15:48] f8:95:c7:fc:f7:5b: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[15:15:50] f8:95:c7:fc:f7:5b: Hostapd: Injecting Msg1 (with same ANonce) before Msg3 to test TPTK construction attack
+[15:15:50] f8:95:c7:fc:f7:5b: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[15:15:52] f8:95:c7:fc:f7:5b: Hostapd: Injecting Msg1 (with same ANonce) before Msg3 to test TPTK construction attack
+[15:15:52] f8:95:c7:fc:f7:5b: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[15:15:54] f8:95:c7:fc:f7:5b: Hostapd: Injecting Msg1 (with same ANonce) before Msg3 to test TPTK construction attack
+[15:15:54] f8:95:c7:fc:f7:5b: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[15:15:56] f8:95:c7:fc:f7:5b: Hostapd: Injecting Msg1 (with same ANonce) before Msg3 to test TPTK construction attack
+[15:15:56] f8:95:c7:fc:f7:5b: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[15:15:58] f8:95:c7:fc:f7:5b: Hostapd: Injecting Msg1 (with same ANonce) before Msg3 to test TPTK construction attack
+[15:15:58] f8:95:c7:fc:f7:5b: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[15:16:00] f8:95:c7:fc:f7:5b: Hostapd: Injecting Msg1 (with same ANonce) before Msg3 to test TPTK construction attack
+[15:16:00] f8:95:c7:fc:f7:5b: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[15:16:02] f8:95:c7:fc:f7:5b: Hostapd: Injecting Msg1 (with same ANonce) before Msg3 to test TPTK construction attack
+[15:16:02] f8:95:c7:fc:f7:5b: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[15:16:04] f8:95:c7:fc:f7:5b: Hostapd: Injecting Msg1 (with same ANonce) before Msg3 to test TPTK construction attack
+[15:16:04] f8:95:c7:fc:f7:5b: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[15:16:06] f8:95:c7:fc:f7:5b: Hostapd: Injecting Msg1 (with same ANonce) before Msg3 to test TPTK construction attack
+[15:16:06] f8:95:c7:fc:f7:5b: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[15:16:08] f8:95:c7:fc:f7:5b: Hostapd: Injecting Msg1 (with same ANonce) before Msg3 to test TPTK construction attack
+[15:16:08] f8:95:c7:fc:f7:5b: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[15:16:10] f8:95:c7:fc:f7:5b: Hostapd: Injecting Msg1 (with same ANonce) before Msg3 to test TPTK construction attack
+[15:16:10] f8:95:c7:fc:f7:5b: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[15:16:12] f8:95:c7:fc:f7:5b: Hostapd: Injecting Msg1 (with same ANonce) before Msg3 to test TPTK construction attack
+[15:16:12] f8:95:c7:fc:f7:5b: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[15:16:14] f8:95:c7:fc:f7:5b: Hostapd: Injecting Msg1 (with same ANonce) before Msg3 to test TPTK construction attack
+[15:16:14] f8:95:c7:fc:f7:5b: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[15:16:16] f8:95:c7:fc:f7:5b: Hostapd: Injecting Msg1 (with same ANonce) before Msg3 to test TPTK construction attack
+[15:16:16] f8:95:c7:fc:f7:5b: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[15:16:18] f8:95:c7:fc:f7:5b: Hostapd: Injecting Msg1 (with same ANonce) before Msg3 to test TPTK construction attack
+[15:16:18] f8:95:c7:fc:f7:5b: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[15:16:20] f8:95:c7:fc:f7:5b: Hostapd: Injecting Msg1 (with same ANonce) before Msg3 to test TPTK construction attack
+[15:16:20] f8:95:c7:fc:f7:5b: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[15:16:22] f8:95:c7:fc:f7:5b: Hostapd: Injecting Msg1 (with same ANonce) before Msg3 to test TPTK construction attack
+[15:16:22] f8:95:c7:fc:f7:5b: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[15:16:24] f8:95:c7:fc:f7:5b: Hostapd: Injecting Msg1 (with same ANonce) before Msg3 to test TPTK construction attack
+[15:16:24] f8:95:c7:fc:f7:5b: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[15:16:26] f8:95:c7:fc:f7:5b: Hostapd: Injecting Msg1 (with same ANonce) before Msg3 to test TPTK construction attack
+[15:16:26] f8:95:c7:fc:f7:5b: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[15:16:28] f8:95:c7:fc:f7:5b: Hostapd: Injecting Msg1 (with same ANonce) before Msg3 to test TPTK construction attack
+[15:16:28] f8:95:c7:fc:f7:5b: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[15:16:30] f8:95:c7:fc:f7:5b: Hostapd: Injecting Msg1 (with same ANonce) before Msg3 to test TPTK construction attack
+[15:16:30] f8:95:c7:fc:f7:5b: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[15:16:32] f8:95:c7:fc:f7:5b: Hostapd: Injecting Msg1 (with same ANonce) before Msg3 to test TPTK construction attack
+[15:16:32] f8:95:c7:fc:f7:5b: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+wlan0: AP-STA-DISCONNECTED f8:95:c7:fc:f7:5b
+wlan0: STA f8:95:c7:fc:f7:5b IEEE 802.11: disassociated
+wlan0: STA f8:95:c7:fc:f7:5b IEEE 802.11: deauthenticated due to inactivity (timer DEAUTH/REMOVE)
+wlan0: STA 00:1d:93:11:22:33 IEEE 802.11: authenticated
+wlan0: STA 00:1d:93:11:22:33 IEEE 802.11: associated (aid 1)
+[15:17:07] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+wlan0: AP-STA-CONNECTED 00:1d:93:11:22:33
+wlan0: STA 00:1d:93:11:22:33 RADIUS: starting accounting session 7964CCE15367139E
+[15:17:09] 00:1d:93:11:22:33: Hostapd: already installing pairwise key
+[15:17:09] 00:1d:93:11:22:33: Hostapd: Injecting Msg1 (with same ANonce) before Msg3 to test TPTK construction attack
+[15:17:09] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+wlan0: STA 00:1d:93:11:22:33 WPA: received EAPOL-Key msg 2/4 in invalid state (10) - dropped - MIC -1
+[15:17:11] 00:1d:93:11:22:33: Hostapd: Injecting Msg1 (with same ANonce) before Msg3 to test TPTK construction attack
+[15:17:11] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[15:17:12] 00:1d:93:11:22:33: DHCP reply 192.168.100.2 to 00:1d:93:11:22:33
+[15:17:12] 00:1d:93:11:22:33: DHCP reply 192.168.100.2 to 00:1d:93:11:22:33
+[15:17:13] 00:1d:93:11:22:33: client has IP address -> testing for group key reinstallation in the 4-way handshake
+[15:17:13] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[15:17:13] 00:1d:93:11:22:33: Hostapd: Injecting Msg1 (with same ANonce) before Msg3 to test TPTK construction attack
+[15:17:13] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+wlan0: STA 00:1d:93:11:22:33 WPA: received EAPOL-Key msg 2/4 in invalid state (10) - dropped - MIC -1
+[15:17:15] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[15:17:15] 00:1d:93:11:22:33: Hostapd: Injecting Msg1 (with same ANonce) before Msg3 to test TPTK construction attack
+[15:17:15] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+wlan0: STA 00:1d:93:11:22:33 WPA: received EAPOL-Key msg 2/4 in invalid state (10) - dropped - MIC -1
+[15:17:17] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[15:17:17] 00:1d:93:11:22:33: Hostapd: Injecting Msg1 (with same ANonce) before Msg3 to test TPTK construction attack
+[15:17:17] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+wlan0: STA 00:1d:93:11:22:33 WPA: received EAPOL-Key msg 2/4 in invalid state (10) - dropped - MIC -1
+[15:17:19] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[15:17:19] 00:1d:93:11:22:33: Hostapd: Injecting Msg1 (with same ANonce) before Msg3 to test TPTK construction attack
+[15:17:19] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[15:17:21] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[15:17:21] 00:1d:93:11:22:33: Hostapd: Injecting Msg1 (with same ANonce) before Msg3 to test TPTK construction attack
+[15:17:21] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+wlan0: STA 00:1d:93:11:22:33 WPA: received EAPOL-Key msg 2/4 in invalid state (10) - dropped - MIC -1
+wlan0: STA 00:1d:93:11:22:33 WPA: received EAPOL-Key msg 2/4 in invalid state (10) - dropped - MIC -1
+[15:17:23] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[15:17:23] 00:1d:93:11:22:33: Hostapd: Injecting Msg1 (with same ANonce) before Msg3 to test TPTK construction attack
+[15:17:23] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+wlan0: STA 00:1d:93:11:22:33 WPA: received EAPOL-Key msg 2/4 in invalid state (10) - dropped - MIC -1
+[15:17:25] 00:1d:93:11:22:33: Hostapd: Injecting Msg1 (with same ANonce) before Msg3 to test TPTK construction attack
+[15:17:25] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[15:17:25] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+wlan0: STA 00:1d:93:11:22:33 WPA: received EAPOL-Key msg 2/4 in invalid state (10) - dropped - MIC -1
+[15:17:27] 00:1d:93:11:22:33: Hostapd: Injecting Msg1 (with same ANonce) before Msg3 to test TPTK construction attack
+[15:17:27] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[15:17:27] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[15:17:27] 00:1d:93:11:22:33: Received 5 unique replies to replayed broadcast ARP requests. Client is vulnerable to group
+[15:17:27]                    key reinstallations in the 4-way handshake (or client accepts replayed broadcast frames)!
+wlan0: STA 00:1d:93:11:22:33 WPA: received EAPOL-Key msg 2/4 in invalid state (10) - dropped - MIC -1
+[15:17:29] 00:1d:93:11:22:33: Hostapd: Injecting Msg1 (with same ANonce) before Msg3 to test TPTK construction attack
+[15:17:29] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+wlan0: STA 00:1d:93:11:22:33 WPA: received EAPOL-Key msg 2/4 in invalid state (10) - dropped - MIC -1
+[15:17:31] 00:1d:93:11:22:33: Hostapd: Injecting Msg1 (with same ANonce) before Msg3 to test TPTK construction attack
+[15:17:31] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+wlan0: STA 00:1d:93:11:22:33 WPA: received EAPOL-Key msg 2/4 in invalid state (10) - dropped - MIC -1
+[15:17:33] 00:1d:93:11:22:33: client DOESN'T seem vulnerable to pairwise key reinstallation in the 4-way handshake (using TPTK attack).
+[15:17:33] 00:1d:93:11:22:33: Hostapd: Injecting Msg1 (with same ANonce) before Msg3 to test TPTK construction attack
+[15:17:33] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+wlan0: STA 00:1d:93:11:22:33 WPA: received EAPOL-Key msg 2/4 in invalid state (10) - dropped - MIC -1
+[15:17:35] 00:1d:93:11:22:33: Hostapd: Injecting Msg1 (with same ANonce) before Msg3 to test TPTK construction attack
+[15:17:35] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+wlan0: STA 00:1d:93:11:22:33 WPA: received EAPOL-Key msg 2/4 in invalid state (10) - dropped - MIC -1
+[15:17:37] 00:1d:93:11:22:33: Hostapd: Injecting Msg1 (with same ANonce) before Msg3 to test TPTK construction attack
+[15:17:37] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+wlan0: STA 00:1d:93:11:22:33 WPA: received EAPOL-Key msg 2/4 in invalid state (10) - dropped - MIC -1
+[15:17:39] 00:1d:93:11:22:33: Hostapd: Injecting Msg1 (with same ANonce) before Msg3 to test TPTK construction attack
+[15:17:39] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+wlan0: STA 00:1d:93:11:22:33 WPA: received EAPOL-Key msg 2/4 in invalid state (10) - dropped - MIC -1
+[15:17:41] 00:1d:93:11:22:33: Hostapd: Injecting Msg1 (with same ANonce) before Msg3 to test TPTK construction attack
+[15:17:41] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[15:17:43] 00:1d:93:11:22:33: Hostapd: Injecting Msg1 (with same ANonce) before Msg3 to test TPTK construction attack
+[15:17:43] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+wlan0: STA 00:1d:93:11:22:33 WPA: received EAPOL-Key msg 2/4 in invalid state (10) - dropped - MIC -1
+wlan0: STA 00:1d:93:11:22:33 WPA: received EAPOL-Key msg 2/4 in invalid state (10) - dropped - MIC -1
+[15:17:45] 00:1d:93:11:22:33: Hostapd: Injecting Msg1 (with same ANonce) before Msg3 to test TPTK construction attack
+[15:17:45] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+wlan0: STA 00:1d:93:11:22:33 WPA: received EAPOL-Key msg 2/4 in invalid state (10) - dropped - MIC -1
+[15:17:47] 00:1d:93:11:22:33: Hostapd: Injecting Msg1 (with same ANonce) before Msg3 to test TPTK construction attack
+[15:17:47] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[15:17:49] 00:1d:93:11:22:33: Hostapd: Injecting Msg1 (with same ANonce) before Msg3 to test TPTK construction attack
+[15:17:49] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+wlan0: STA 00:1d:93:11:22:33 WPA: received EAPOL-Key msg 2/4 in invalid state (10) - dropped - MIC -1
+wlan0: STA 00:1d:93:11:22:33 WPA: received EAPOL-Key msg 2/4 in invalid state (10) - dropped - MIC -1
+[15:17:51] 00:1d:93:11:22:33: Hostapd: Injecting Msg1 (with same ANonce) before Msg3 to test TPTK construction attack
+[15:17:51] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+wlan0: STA 00:1d:93:11:22:33 WPA: received EAPOL-Key msg 2/4 in invalid state (10) - dropped - MIC -1
+[15:17:53] 00:1d:93:11:22:33: Hostapd: Injecting Msg1 (with same ANonce) before Msg3 to test TPTK construction attack
+[15:17:53] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[15:17:55] 00:1d:93:11:22:33: Hostapd: Injecting Msg1 (with same ANonce) before Msg3 to test TPTK construction attack
+[15:17:55] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+wlan0: STA 00:1d:93:11:22:33 WPA: received EAPOL-Key msg 2/4 in invalid state (10) - dropped - MIC -1
+wlan0: STA 00:1d:93:11:22:33 WPA: received EAPOL-Key msg 2/4 in invalid state (10) - dropped - MIC -1
+[15:17:57] 00:1d:93:11:22:33: Hostapd: Injecting Msg1 (with same ANonce) before Msg3 to test TPTK construction attack
+[15:17:57] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+wlan0: STA 00:1d:93:11:22:33 WPA: received EAPOL-Key msg 2/4 in invalid state (10) - dropped - MIC -1
+[15:17:59] 00:1d:93:11:22:33: Hostapd: Injecting Msg1 (with same ANonce) before Msg3 to test TPTK construction attack
+[15:17:59] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+wlan0: STA 00:1d:93:11:22:33 WPA: received EAPOL-Key msg 2/4 in invalid state (10) - dropped - MIC -1
+[15:18:01] 00:1d:93:11:22:33: Hostapd: Injecting Msg1 (with same ANonce) before Msg3 to test TPTK construction attack
+[15:18:01] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+wlan0: STA 00:1d:93:11:22:33 WPA: received EAPOL-Key msg 2/4 in invalid state (10) - dropped - MIC -1
+[15:18:03] 00:1d:93:11:22:33: Hostapd: Injecting Msg1 (with same ANonce) before Msg3 to test TPTK construction attack
+[15:18:03] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[15:18:05] 00:1d:93:11:22:33: Hostapd: Injecting Msg1 (with same ANonce) before Msg3 to test TPTK construction attack
+[15:18:05] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[15:18:07] 00:1d:93:11:22:33: Hostapd: Injecting Msg1 (with same ANonce) before Msg3 to test TPTK construction attack
+[15:18:07] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+wlan0: STA 00:1d:93:11:22:33 WPA: received EAPOL-Key msg 2/4 in invalid state (10) - dropped - MIC -1
+wlan0: STA 00:1d:93:11:22:33 WPA: received EAPOL-Key msg 2/4 in invalid state (10) - dropped - MIC -1
+wlan0: STA 00:1d:93:11:22:33 WPA: received EAPOL-Key msg 2/4 in invalid state (10) - dropped - MIC -1
+[15:18:09] 00:1d:93:11:22:33: Hostapd: Injecting Msg1 (with same ANonce) before Msg3 to test TPTK construction attack
+[15:18:09] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[15:18:11] 00:1d:93:11:22:33: Hostapd: Injecting Msg1 (with same ANonce) before Msg3 to test TPTK construction attack
+[15:18:11] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[15:18:13] 00:1d:93:11:22:33: Hostapd: Injecting Msg1 (with same ANonce) before Msg3 to test TPTK construction attack
+[15:18:13] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[15:18:15] 00:1d:93:11:22:33: Hostapd: Injecting Msg1 (with same ANonce) before Msg3 to test TPTK construction attack
+[15:18:15] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[15:18:17] 00:1d:93:11:22:33: Hostapd: Injecting Msg1 (with same ANonce) before Msg3 to test TPTK construction attack
+[15:18:17] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+wlan0: STA 00:1d:93:11:22:33 IEEE 802.11: authenticated
+wlan0: STA 00:1d:93:11:22:33 IEEE 802.11: associated (aid 1)
+[15:18:17] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[15:18:19] 00:1d:93:11:22:33: Hostapd: already installing pairwise key
+[15:18:19] 00:1d:93:11:22:33: Hostapd: Injecting Msg1 (with same ANonce) before Msg3 to test TPTK construction attack
+[15:18:19] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+wlan0: STA 00:1d:93:11:22:33 WPA: received EAPOL-Key msg 2/4 in invalid state (10) - dropped - MIC -1
+[15:18:21] 00:1d:93:11:22:33: Hostapd: Injecting Msg1 (with same ANonce) before Msg3 to test TPTK construction attack
+[15:18:21] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+wlan0: STA 00:1d:93:11:22:33 WPA: received EAPOL-Key msg 2/4 in invalid state (10) - dropped - MIC -1
+[15:18:23] 00:1d:93:11:22:33: DHCP reply 192.168.100.2 to 00:1d:93:11:22:33
+[15:18:23] 00:1d:93:11:22:33: DHCP reply 192.168.100.2 to 00:1d:93:11:22:33
+[15:18:23] 00:1d:93:11:22:33: Hostapd: Injecting Msg1 (with same ANonce) before Msg3 to test TPTK construction attack
+[15:18:23] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+wlan0: STA 00:1d:93:11:22:33 WPA: received EAPOL-Key msg 2/4 in invalid state (10) - dropped - MIC -1
+[15:18:25] 00:1d:93:11:22:33: Hostapd: Injecting Msg1 (with same ANonce) before Msg3 to test TPTK construction attack
+[15:18:25] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+wlan0: STA 00:1d:93:11:22:33 WPA: received EAPOL-Key msg 2/4 in invalid state (10) - dropped - MIC -1
+[15:18:27] 00:1d:93:11:22:33: Hostapd: Injecting Msg1 (with same ANonce) before Msg3 to test TPTK construction attack
+[15:18:27] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+wlan0: STA 00:1d:93:11:22:33 WPA: received EAPOL-Key msg 2/4 in invalid state (10) - dropped - MIC -1
+[15:18:29] 00:1d:93:11:22:33: Hostapd: Injecting Msg1 (with same ANonce) before Msg3 to test TPTK construction attack
+[15:18:29] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[15:18:31] 00:1d:93:11:22:33: Hostapd: Injecting Msg1 (with same ANonce) before Msg3 to test TPTK construction attack
+[15:18:31] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+wlan0: STA 00:1d:93:11:22:33 WPA: received EAPOL-Key msg 2/4 in invalid state (10) - dropped - MIC -1
+wlan0: STA 00:1d:93:11:22:33 WPA: received EAPOL-Key msg 2/4 in invalid state (10) - dropped - MIC -1
+[15:18:33] 00:1d:93:11:22:33: Hostapd: Injecting Msg1 (with same ANonce) before Msg3 to test TPTK construction attack
+[15:18:33] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[15:18:35] 00:1d:93:11:22:33: Hostapd: Injecting Msg1 (with same ANonce) before Msg3 to test TPTK construction attack
+[15:18:35] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[15:18:37] 00:1d:93:11:22:33: Hostapd: Injecting Msg1 (with same ANonce) before Msg3 to test TPTK construction attack
+[15:18:37] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+wlan0: STA 00:1d:93:11:22:33 WPA: received EAPOL-Key msg 2/4 in invalid state (10) - dropped - MIC -1
+wlan0: STA 00:1d:93:11:22:33 WPA: received EAPOL-Key msg 2/4 in invalid state (10) - dropped - MIC -1
+[15:18:39] 00:1d:93:11:22:33: Hostapd: Injecting Msg1 (with same ANonce) before Msg3 to test TPTK construction attack
+[15:18:39] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[15:18:41] 00:1d:93:11:22:33: Hostapd: Injecting Msg1 (with same ANonce) before Msg3 to test TPTK construction attack
+[15:18:41] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[15:18:43] 00:1d:93:11:22:33: Hostapd: Injecting Msg1 (with same ANonce) before Msg3 to test TPTK construction attack
+[15:18:43] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+wlan0: STA 00:1d:93:11:22:33 WPA: received EAPOL-Key msg 2/4 in invalid state (10) - dropped - MIC -1
+wlan0: STA 00:1d:93:11:22:33 WPA: received EAPOL-Key msg 2/4 in invalid state (10) - dropped - MIC -1
+wlan0: STA 00:1d:93:11:22:33 WPA: received EAPOL-Key msg 2/4 in invalid state (10) - dropped - MIC -1
+[15:18:45] 00:1d:93:11:22:33: Hostapd: Injecting Msg1 (with same ANonce) before Msg3 to test TPTK construction attack
+[15:18:45] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[15:18:47] 00:1d:93:11:22:33: Hostapd: Injecting Msg1 (with same ANonce) before Msg3 to test TPTK construction attack
+[15:18:47] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[15:18:49] 00:1d:93:11:22:33: Hostapd: Injecting Msg1 (with same ANonce) before Msg3 to test TPTK construction attack
+[15:18:49] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[15:18:51] 00:1d:93:11:22:33: Hostapd: Injecting Msg1 (with same ANonce) before Msg3 to test TPTK construction attack
+[15:18:51] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+wlan0: STA 00:1d:93:11:22:33 IEEE 802.11: authenticated
+wlan0: STA 00:1d:93:11:22:33 IEEE 802.11: associated (aid 1)
+[15:18:53] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[15:18:55] 00:1d:93:11:22:33: Hostapd: already installing pairwise key
+[15:18:55] 00:1d:93:11:22:33: Hostapd: Injecting Msg1 (with same ANonce) before Msg3 to test TPTK construction attack
+[15:18:55] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+wlan0: STA 00:1d:93:11:22:33 WPA: received EAPOL-Key msg 2/4 in invalid state (10) - dropped - MIC -1
+[15:18:57] 00:1d:93:11:22:33: Hostapd: Injecting Msg1 (with same ANonce) before Msg3 to test TPTK construction attack
+[15:18:57] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+wlan0: STA 00:1d:93:11:22:33 WPA: received EAPOL-Key msg 2/4 in invalid state (10) - dropped - MIC -1
+[15:18:59] 00:1d:93:11:22:33: DHCP reply 192.168.100.2 to 00:1d:93:11:22:33
+[15:18:59] 00:1d:93:11:22:33: DHCP reply 192.168.100.2 to 00:1d:93:11:22:33
+[15:18:59] 00:1d:93:11:22:33: Hostapd: Injecting Msg1 (with same ANonce) before Msg3 to test TPTK construction attack
+[15:18:59] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+wlan0: STA 00:1d:93:11:22:33 WPA: received EAPOL-Key msg 2/4 in invalid state (10) - dropped - MIC -1
+^Cwlan0: interface state ENABLED->DISABLED
+Traceback (most recent call last):
+  File "./krack-test-client.py", line 617, in <module>
+wlan0: AP-STA-DISCONNECTED 00:1d:93:11:22:33
+    attack.run(test_grouphs=test_grouphs, test_tptk=test_tptk)
+  File "./krack-test-client.py", line 529, in run
+    sel = select.select([self.sock_mon, self.sock_eth], [], [], 1)
+KeyboardInterrupt
+wlan0: AP-DISABLED 
+[15:19:01] Closing hostapd and cleaning up ...
+
