@@ -1,0 +1,44 @@
+root@sw1-ThinkPad-T61p:/home/sw1/KRACK_Test/krackattacks-scripts/krackattack# ./krack-test-client.py --tptk
+[16:51:29] Note: disable Wi-Fi in network manager & disable hardware encryption. Both may interfere with this script.
+[16:51:30] Starting hostapd ...
+Configuration file: /home/sw1/KRACK_Test/krackattacks-scripts/krackattack/hostapd.conf
+nl80211: Could not re-add multicast membership for vendor events: -2 (No such file or directory)
+Using interface wlan0 with hwaddr 90:9f:33:ec:7e:d0 and ssid "testnetwork"
+wlan0: interface state UNINITIALIZED->ENABLED
+wlan0: AP-ENABLED 
+[16:51:31] Ready. Connect to this Access Point to start the tests. Make sure the client requests an IP using DHCP!
+wlan0: STA 00:1d:93:11:22:33 IEEE 802.11: authenticated
+wlan0: STA 00:1d:93:11:22:33 IEEE 802.11: associated (aid 1)
+[16:52:01] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+wlan0: AP-STA-CONNECTED 00:1d:93:11:22:33
+wlan0: STA 00:1d:93:11:22:33 RADIUS: starting accounting session FB96DECA272051AB
+[16:52:03] 00:1d:93:11:22:33: Hostapd: already installing pairwise key
+[16:52:03] 00:1d:93:11:22:33: Hostapd: Injecting Msg1 (with same ANonce) before Msg3 to test TPTK construction attack
+[16:52:03] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[16:52:05] 00:1d:93:11:22:33: Hostapd: Injecting Msg1 (with same ANonce) before Msg3 to test TPTK construction attack
+[16:52:05] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[16:52:07] 00:1d:93:11:22:33: Hostapd: Injecting Msg1 (with same ANonce) before Msg3 to test TPTK construction attack
+[16:52:07] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[16:52:09] 00:1d:93:11:22:33: Hostapd: Injecting Msg1 (with same ANonce) before Msg3 to test TPTK construction attack
+[16:52:09] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[16:52:10] 00:1d:93:11:22:33: IV reuse detected (IV=4, seq=9). Client is vulnerable to pairwise key reinstallations in the 4-way handshake!
+[16:52:11] 00:1d:93:11:22:33: Hostapd: Injecting Msg1 (with same ANonce) before Msg3 to test TPTK construction attack
+[16:52:11] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[16:52:13] 00:1d:93:11:22:33: Hostapd: Injecting Msg1 (with same ANonce) before Msg3 to test TPTK construction attack
+[16:52:13] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[16:52:15] 00:1d:93:11:22:33: Hostapd: Injecting Msg1 (with same ANonce) before Msg3 to test TPTK construction attack
+[16:52:15] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[16:52:17] 00:1d:93:11:22:33: Hostapd: Injecting Msg1 (with same ANonce) before Msg3 to test TPTK construction attack
+[16:52:17] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[16:52:19] 00:1d:93:11:22:33: Hostapd: Injecting Msg1 (with same ANonce) before Msg3 to test TPTK construction attack
+[16:52:19] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[16:52:21] 00:1d:93:11:22:33: Hostapd: Injecting Msg1 (with same ANonce) before Msg3 to test TPTK construction attack
+[16:52:21] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+wlan0: AP-STA-DISCONNECTED 00:1d:93:11:22:33
+^Cwlan0: interface state ENABLED->DISABLED
+Traceback (most recent call last):
+  File "./krack-test-client.py", line 617, in <module>
+wlan0: AP-DISABLED 
+    attack.run(test_grouphs=test_grouphs, test_tptk=test_tptk)
+  File "./krack-test-client.py", line 530, in run
+
