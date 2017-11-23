@@ -1,0 +1,718 @@
+root@sw1-ThinkPad-T61p:/home/sw1/KRACK_Test/krackattacks-scripts/krackattack# ./grouptest.py --group --debug
+[09:53:09] Note: disable Wi-Fi in network manager & disable hardware encryption. Both may interfere with this script.
+[09:53:10] Starting hostapd ...
+Configuration file: /home/sw1/KRACK_Test/krackattacks-scripts/krackattack/hostapd.conf
+nl80211: Could not re-add multicast membership for vendor events: -2 (No such file or directory)
+Using interface wlan0 with hwaddr 90:9f:33:ec:7e:d0 and ssid "testnetwork"
+wlan0: interface state UNINITIALIZED->ENABLED
+wlan0: AP-ENABLED 
+[09:53:11] Hostapd: starting group key handshake tests
+[09:53:11] Ready. Connect to this Access Point to start the tests. Make sure the client requests an IP using DHCP!
+wlan0: STA 00:1d:93:11:22:33 IEEE 802.11: authenticated
+wlan0: STA 00:1d:93:11:22:33 IEEE 802.11: associated (aid 1)
+wlan0: AP-STA-CONNECTED 00:1d:93:11:22:33
+wlan0: STA 00:1d:93:11:22:33 RADIUS: starting accounting session 3DE5325A53ABBB6E
+wlan0: STA 00:1d:93:11:22:33 WPA: pairwise key handshake completed (RSN)
+[09:53:35] 00:1d:93:11:22:33: ### transmitted data using IV=1 (seq=2)
+[09:53:35] 00:1d:93:11:22:33: ### transmitted data using IV=2 (seq=3)
+[09:53:35] 00:1d:93:11:22:33: ### transmitted data using IV=3 (seq=4)
+[09:53:35] 00:1d:93:11:22:33: DHCP reply 192.168.100.2 to 00:1d:93:11:22:33
+[09:53:36] 00:1d:93:11:22:33: ### transmitted data using IV=3 (seq=4)
+[09:53:36] 00:1d:93:11:22:33: ### transmitted data using IV=4 (seq=5)
+[09:53:36] 00:1d:93:11:22:33: DHCP reply 192.168.100.2 to 00:1d:93:11:22:33
+[09:53:36] 00:1d:93:11:22:33: ### transmitted data using IV=4 (seq=5)
+[09:53:36] 00:1d:93:11:22:33: ### transmitted data using IV=4 (seq=5)
+[09:53:36] 00:1d:93:11:22:33: ### transmitted data using IV=4 (seq=5)
+[09:53:36] 00:1d:93:11:22:33: ### transmitted data using IV=4 (seq=5)
+[09:53:36] 00:1d:93:11:22:33: ### transmitted data using IV=4 (seq=5)
+[09:53:36] 00:1d:93:11:22:33: ### transmitted data using IV=5 (seq=6)
+[09:53:36] 00:1d:93:11:22:33: ### transmitted data using IV=6 (seq=7)
+[09:53:36] 00:1d:93:11:22:33: ### transmitted data using IV=7 (seq=8)
+[09:53:36] 00:1d:93:11:22:33: ### transmitted data using IV=8 (seq=9)
+[09:53:36] 00:1d:93:11:22:33: ### transmitted data using IV=9 (seq=10)
+[09:53:36] 00:1d:93:11:22:33: ### transmitted data using IV=10 (seq=11)
+[09:53:36] 00:1d:93:11:22:33: ### transmitted data using IV=11 (seq=12)
+[09:53:36] 00:1d:93:11:22:33: ### transmitted data using IV=12 (seq=13)
+[09:53:36] 00:1d:93:11:22:33: ### transmitted data using IV=13 (seq=14)
+[09:53:36] 00:1d:93:11:22:33: ### transmitted data using IV=14 (seq=15)
+[09:53:36] 00:1d:93:11:22:33: client has IP address -> testing for group key reinstallation in the group key handshake
+[09:53:36] 00:1d:93:11:22:33: sent 1 broadcasts ARPs this interval
+[09:53:36] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[09:53:36] 00:1d:93:11:22:33: ### transmitted data using IV=15 (seq=16)
+[09:53:37] 00:1d:93:11:22:33: ### transmitted data using IV=16 (seq=17)
+[09:53:37] 00:1d:93:11:22:33: ### transmitted data using IV=17 (seq=18)
+[09:53:38] 00:1d:93:11:22:33: ### transmitted data using IV=18 (seq=19)
+wlan0: STA 00:1d:93:11:22:33 WPA: group key handshake completed (RSN)
+[09:53:38] 00:1d:93:11:22:33: ### transmitted data using IV=19 (seq=20)
+[09:53:38] 00:1d:93:11:22:33: ### transmitted data using IV=20 (seq=21)
+[09:53:38] 00:1d:93:11:22:33: ### transmitted data using IV=21 (seq=22)
+[09:53:38] 00:1d:93:11:22:33: ### transmitted data using IV=22 (seq=23)
+[09:53:38] 00:1d:93:11:22:33: sent 2 broadcasts ARPs this interval
+[09:53:38] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[09:53:39] 00:1d:93:11:22:33: ### transmitted data using IV=23 (seq=24)
+[09:53:39] 00:1d:93:11:22:33: ### transmitted data using IV=24 (seq=25)
+[09:53:40] 00:1d:93:11:22:33: sent 3 broadcasts ARPs this interval
+[09:53:40] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[09:53:40] 00:1d:93:11:22:33: ### transmitted data using IV=25 (seq=26)
+[09:53:40] 00:1d:93:11:22:33: ### transmitted data using IV=26 (seq=27)
+[09:53:40] 00:1d:93:11:22:33: received 1 replies to the replayed broadcast ARP requests
+wlan0: STA 00:1d:93:11:22:33 WPA: group key handshake completed (RSN)
+[09:53:40] 00:1d:93:11:22:33: ### transmitted data using IV=27 (seq=28)
+[09:53:40] 00:1d:93:11:22:33: ### transmitted data using IV=28 (seq=29)
+[09:53:40] 00:1d:93:11:22:33: ### transmitted data using IV=29 (seq=30)
+[09:53:40] 00:1d:93:11:22:33: ### transmitted data using IV=30 (seq=31)
+[09:53:41] 00:1d:93:11:22:33: ### transmitted data using IV=31 (seq=32)
+[09:53:41] 00:1d:93:11:22:33: ### transmitted data using IV=32 (seq=33)
+[09:53:41] 00:1d:93:11:22:33: ### transmitted data using IV=33 (seq=34)
+[09:53:41] 00:1d:93:11:22:33: ### transmitted data using IV=34 (seq=35)
+[09:53:41] 00:1d:93:11:22:33: ### transmitted data using IV=35 (seq=36)
+[09:53:42] 00:1d:93:11:22:33: ### transmitted data using IV=36 (seq=37)
+wlan0: STA 00:1d:93:11:22:33 WPA: group key handshake completed (RSN)
+[09:53:42] 00:1d:93:11:22:33: ### transmitted data using IV=37 (seq=38)
+[09:53:42] 00:1d:93:11:22:33: ### transmitted data using IV=38 (seq=39)
+[09:53:42] 00:1d:93:11:22:33: ### transmitted data using IV=39 (seq=40)
+[09:53:42] 00:1d:93:11:22:33: ### transmitted data using IV=40 (seq=41)
+[09:53:42] 00:1d:93:11:22:33: sent 4 broadcasts ARPs this interval
+[09:53:42] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[09:53:44] 00:1d:93:11:22:33: got a reply to broadcast ARP during this interval
+[09:53:44] 00:1d:93:11:22:33: sent 1 broadcasts ARPs this interval
+[09:53:44] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[09:53:44] 00:1d:93:11:22:33: ### transmitted data using IV=41 (seq=42)
+wlan0: STA 00:1d:93:11:22:33 WPA: group key handshake completed (RSN)
+[09:53:44] 00:1d:93:11:22:33: ### transmitted data using IV=42 (seq=43)
+[09:53:44] 00:1d:93:11:22:33: received 2 replies to the replayed broadcast ARP requests
+[09:53:44] 00:1d:93:11:22:33: ### transmitted data using IV=43 (seq=44)
+[09:53:44] 00:1d:93:11:22:33: ### transmitted data using IV=44 (seq=45)
+[09:53:44] 00:1d:93:11:22:33: ### transmitted data using IV=45 (seq=46)
+[09:53:46] 00:1d:93:11:22:33: ### transmitted data using IV=46 (seq=47)
+[09:53:46] 00:1d:93:11:22:33: ### transmitted data using IV=47 (seq=48)
+wlan0: STA 00:1d:93:11:22:33 WPA: group key handshake completed (RSN)
+[09:53:46] 00:1d:93:11:22:33: ### transmitted data using IV=48 (seq=49)
+[09:53:46] 00:1d:93:11:22:33: ### transmitted data using IV=49 (seq=50)
+[09:53:46] 00:1d:93:11:22:33: ### transmitted data using IV=50 (seq=51)
+[09:53:46] 00:1d:93:11:22:33: ### transmitted data using IV=51 (seq=52)
+[09:53:46] 00:1d:93:11:22:33: ### transmitted data using IV=51 (seq=52)
+[09:53:46] 00:1d:93:11:22:33: ### transmitted data using IV=52 (seq=53)
+[09:53:46] 00:1d:93:11:22:33: ### transmitted data using IV=53 (seq=54)
+[09:53:46] 00:1d:93:11:22:33: ### transmitted data using IV=54 (seq=55)
+[09:53:46] 00:1d:93:11:22:33: sent 2 broadcasts ARPs this interval
+[09:53:46] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[09:53:47] 00:1d:93:11:22:33: ### transmitted data using IV=55 (seq=56)
+[09:53:47] 00:1d:93:11:22:33: ### transmitted data using IV=56 (seq=57)
+[09:53:48] 00:1d:93:11:22:33: sent 3 broadcasts ARPs this interval
+[09:53:48] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[09:53:48] 00:1d:93:11:22:33: ### transmitted data using IV=57 (seq=58)
+[09:53:48] 00:1d:93:11:22:33: received 3 replies to the replayed broadcast ARP requests
+[09:53:49] 00:1d:93:11:22:33: ### transmitted data using IV=58 (seq=59)
+[09:53:49] 00:1d:93:11:22:33: ### transmitted data using IV=59 (seq=60)
+[09:53:49] 00:1d:93:11:22:33: ### transmitted data using IV=60 (seq=61)
+[09:53:50] 00:1d:93:11:22:33: sent 4 broadcasts ARPs this interval
+[09:53:50] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[09:53:51] 00:1d:93:11:22:33: ### transmitted data using IV=61 (seq=62)
+[09:53:51] 00:1d:93:11:22:33: ### transmitted data using IV=62 (seq=63)
+wlan0: STA 00:1d:93:11:22:33 WPA: group key handshake completed (RSN)
+[09:53:51] 00:1d:93:11:22:33: ### transmitted data using IV=63 (seq=64)
+[09:53:51] 00:1d:93:11:22:33: ### transmitted data using IV=63 (seq=64)
+[09:53:51] 00:1d:93:11:22:33: ### transmitted data using IV=64 (seq=65)
+[09:53:52] 00:1d:93:11:22:33: ### transmitted data using IV=65 (seq=66)
+wlan0: STA 00:1d:93:11:22:33 WPA: group key handshake completed (RSN)
+[09:53:52] 00:1d:93:11:22:33: ### transmitted data using IV=66 (seq=67)
+[09:53:52] 00:1d:93:11:22:33: ### transmitted data using IV=67 (seq=68)
+[09:53:52] 00:1d:93:11:22:33: ### transmitted data using IV=68 (seq=69)
+[09:53:52] 00:1d:93:11:22:33: ### transmitted data using IV=69 (seq=70)
+[09:53:52] 00:1d:93:11:22:33: ### transmitted data using IV=70 (seq=71)
+[09:53:52] 00:1d:93:11:22:33: got a reply to broadcast ARP during this interval
+[09:53:52] 00:1d:93:11:22:33: sent 1 broadcasts ARPs this interval
+[09:53:52] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+wlan0: STA 00:1d:93:11:22:33 WPA: group key handshake completed (RSN)
+[09:53:54] 00:1d:93:11:22:33: ### transmitted data using IV=71 (seq=72)
+[09:53:54] 00:1d:93:11:22:33: ### transmitted data using IV=72 (seq=73)
+[09:53:54] 00:1d:93:11:22:33: ### transmitted data using IV=73 (seq=74)
+[09:53:54] 00:1d:93:11:22:33: ### transmitted data using IV=74 (seq=75)
+[09:53:54] 00:1d:93:11:22:33: ### transmitted data using IV=75 (seq=76)
+[09:53:54] 00:1d:93:11:22:33: sent 2 broadcasts ARPs this interval
+[09:53:54] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[09:53:55] 00:1d:93:11:22:33: ### transmitted data using IV=76 (seq=77)
+[09:53:55] 00:1d:93:11:22:33: received 4 replies to the replayed broadcast ARP requests
+[09:53:56] 00:1d:93:11:22:33: sent 3 broadcasts ARPs this interval
+[09:53:56] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[09:53:57] 00:1d:93:11:22:33: ### transmitted data using IV=77 (seq=78)
+[09:53:57] 00:1d:93:11:22:33: ### transmitted data using IV=78 (seq=79)
+wlan0: STA 00:1d:93:11:22:33 WPA: group key handshake completed (RSN)
+[09:53:57] 00:1d:93:11:22:33: ### transmitted data using IV=79 (seq=80)
+[09:53:57] 00:1d:93:11:22:33: ### transmitted data using IV=80 (seq=81)
+[09:53:57] 00:1d:93:11:22:33: ### transmitted data using IV=81 (seq=82)
+[09:53:57] 00:1d:93:11:22:33: ### transmitted data using IV=82 (seq=83)
+[09:53:57] 00:1d:93:11:22:33: ### transmitted data using IV=83 (seq=84)
+[09:53:58] 00:1d:93:11:22:33: sent 4 broadcasts ARPs this interval
+[09:53:58] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[09:53:59] 00:1d:93:11:22:33: ### transmitted data using IV=84 (seq=85)
+wlan0: STA 00:1d:93:11:22:33 WPA: group key handshake completed (RSN)
+[09:53:59] 00:1d:93:11:22:33: ### transmitted data using IV=85 (seq=86)
+[09:53:59] 00:1d:93:11:22:33: ### transmitted data using IV=86 (seq=87)
+[09:53:59] 00:1d:93:11:22:33: ### transmitted data using IV=87 (seq=88)
+[09:53:59] 00:1d:93:11:22:33: ### transmitted data using IV=87 (seq=88)
+[09:53:59] 00:1d:93:11:22:33: ### transmitted data using IV=87 (seq=88)
+[09:53:59] 00:1d:93:11:22:33: ### transmitted data using IV=87 (seq=88)
+[09:53:59] 00:1d:93:11:22:33: ### transmitted data using IV=87 (seq=88)
+[09:53:59] 00:1d:93:11:22:33: ### transmitted data using IV=88 (seq=89)
+[09:53:59] 00:1d:93:11:22:33: ### transmitted data using IV=88 (seq=89)
+[09:53:59] 00:1d:93:11:22:33: ### transmitted data using IV=88 (seq=89)
+[09:53:59] 00:1d:93:11:22:33: ### transmitted data using IV=88 (seq=89)
+[09:54:00] 00:1d:93:11:22:33: got a reply to broadcast ARP during this interval
+[09:54:00] 00:1d:93:11:22:33: sent 1 broadcasts ARPs this interval
+[09:54:00] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[09:54:01] 00:1d:93:11:22:33: received 5 replies to the replayed broadcast ARP requests
+[09:54:01] 00:1d:93:11:22:33: ### transmitted data using IV=89 (seq=90)
+[09:54:02] 00:1d:93:11:22:33: sent 2 broadcasts ARPs this interval
+[09:54:02] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[09:54:04] 00:1d:93:11:22:33: ### transmitted data using IV=90 (seq=91)
+wlan0: STA 00:1d:93:11:22:33 WPA: group key handshake completed (RSN)
+[09:54:04] 00:1d:93:11:22:33: ### transmitted data using IV=91 (seq=92)
+[09:54:04] 00:1d:93:11:22:33: ### transmitted data using IV=92 (seq=93)
+[09:54:04] 00:1d:93:11:22:33: ### transmitted data using IV=92 (seq=93)
+[09:54:04] 00:1d:93:11:22:33: ### transmitted data using IV=92 (seq=93)
+[09:54:04] 00:1d:93:11:22:33: ### transmitted data using IV=93 (seq=94)
+[09:54:04] 00:1d:93:11:22:33: ### transmitted data using IV=94 (seq=95)
+[09:54:04] 00:1d:93:11:22:33: ### transmitted data using IV=95 (seq=96)
+[09:54:04] 00:1d:93:11:22:33: ### transmitted data using IV=96 (seq=97)
+[09:54:04] 00:1d:93:11:22:33: ### transmitted data using IV=97 (seq=98)
+[09:54:04] 00:1d:93:11:22:33: ### transmitted data using IV=98 (seq=99)
+[09:54:04] 00:1d:93:11:22:33: sent 3 broadcasts ARPs this interval
+[09:54:04] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[09:54:05] 00:1d:93:11:22:33: ### transmitted data using IV=99 (seq=100)
+[09:54:05] 00:1d:93:11:22:33: received 6 replies to the replayed broadcast ARP requests
+[09:54:06] 00:1d:93:11:22:33: sent 4 broadcasts ARPs this interval
+[09:54:06] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[09:54:07] 00:1d:93:11:22:33: ### transmitted data using IV=100 (seq=101)
+[09:54:07] 00:1d:93:11:22:33: received 7 replies to the replayed broadcast ARP requests
+[09:54:07] 00:1d:93:11:22:33: ### transmitted data using IV=101 (seq=102)
+[09:54:07] 00:1d:93:11:22:33: ### transmitted data using IV=102 (seq=103)
+[09:54:08] 00:1d:93:11:22:33: got a reply to broadcast ARP during this interval
+[09:54:08] 00:1d:93:11:22:33: sent 1 broadcasts ARPs this interval
+[09:54:08] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[09:54:09] 00:1d:93:11:22:33: ### transmitted data using IV=103 (seq=104)
+[09:54:09] 00:1d:93:11:22:33: received 8 replies to the replayed broadcast ARP requests
+wlan0: STA 00:1d:93:11:22:33 WPA: group key handshake completed (RSN)
+[09:54:09] 00:1d:93:11:22:33: ### transmitted data using IV=104 (seq=105)
+[09:54:09] 00:1d:93:11:22:33: ### transmitted data using IV=105 (seq=106)
+[09:54:09] 00:1d:93:11:22:33: ### transmitted data using IV=106 (seq=107)
+[09:54:09] 00:1d:93:11:22:33: ### transmitted data using IV=107 (seq=108)
+[09:54:09] 00:1d:93:11:22:33: ### transmitted data using IV=107 (seq=108)
+[09:54:10] 00:1d:93:11:22:33: sent 2 broadcasts ARPs this interval
+[09:54:10] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[09:54:11] 00:1d:93:11:22:33: received 9 replies to the replayed broadcast ARP requests
+[09:54:11] 00:1d:93:11:22:33: ### transmitted data using IV=108 (seq=109)
+[09:54:13] 00:1d:93:11:22:33: sent 3 broadcasts ARPs this interval
+[09:54:13] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[09:54:13] 00:1d:93:11:22:33: ### transmitted data using IV=109 (seq=110)
+wlan0: STA 00:1d:93:11:22:33 WPA: group key handshake completed (RSN)
+[09:54:13] 00:1d:93:11:22:33: ### transmitted data using IV=109 (seq=110)
+[09:54:13] 00:1d:93:11:22:33: ### transmitted data using IV=110 (seq=111)
+[09:54:13] 00:1d:93:11:22:33: ### transmitted data using IV=111 (seq=112)
+[09:54:13] 00:1d:93:11:22:33: ### transmitted data using IV=112 (seq=113)
+[09:54:13] 00:1d:93:11:22:33: ### transmitted data using IV=113 (seq=114)
+[09:54:13] 00:1d:93:11:22:33: ### transmitted data using IV=114 (seq=115)
+[09:54:13] 00:1d:93:11:22:33: ### transmitted data using IV=114 (seq=115)
+[09:54:13] 00:1d:93:11:22:33: ### transmitted data using IV=115 (seq=116)
+[09:54:13] 00:1d:93:11:22:33: ### transmitted data using IV=115 (seq=116)
+[09:54:13] 00:1d:93:11:22:33: ### transmitted data using IV=116 (seq=117)
+[09:54:13] 00:1d:93:11:22:33: ### transmitted data using IV=116 (seq=117)
+[09:54:15] 00:1d:93:11:22:33: sent 4 broadcasts ARPs this interval
+[09:54:15] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[09:54:17] 00:1d:93:11:22:33: got a reply to broadcast ARP during this interval
+[09:54:17] 00:1d:93:11:22:33: sent 1 broadcasts ARPs this interval
+[09:54:17] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[09:54:17] 00:1d:93:11:22:33: received 10 replies to the replayed broadcast ARP requests
+[09:54:17] 00:1d:93:11:22:33: ### transmitted data using IV=117 (seq=118)
+wlan0: STA 00:1d:93:11:22:33 WPA: group key handshake completed (RSN)
+[09:54:17] 00:1d:93:11:22:33: ### transmitted data using IV=118 (seq=119)
+[09:54:17] 00:1d:93:11:22:33: ### transmitted data using IV=119 (seq=120)
+[09:54:17] 00:1d:93:11:22:33: ### transmitted data using IV=120 (seq=121)
+[09:54:17] 00:1d:93:11:22:33: ### transmitted data using IV=121 (seq=122)
+[09:54:17] 00:1d:93:11:22:33: ### transmitted data using IV=122 (seq=123)
+[09:54:18] 00:1d:93:11:22:33: ### transmitted data using IV=123 (seq=124)
+[09:54:18] 00:1d:93:11:22:33: ### transmitted data using IV=124 (seq=125)
+wlan0: STA 00:1d:93:11:22:33 WPA: group key handshake completed (RSN)
+[09:54:18] 00:1d:93:11:22:33: ### transmitted data using IV=125 (seq=126)
+[09:54:18] 00:1d:93:11:22:33: ### transmitted data using IV=126 (seq=127)
+[09:54:18] 00:1d:93:11:22:33: ### transmitted data using IV=127 (seq=128)
+[09:54:18] 00:1d:93:11:22:33: ### transmitted data using IV=128 (seq=129)
+[09:54:18] 00:1d:93:11:22:33: ### transmitted data using IV=129 (seq=130)
+[09:54:18] 00:1d:93:11:22:33: ### transmitted data using IV=130 (seq=131)
+[09:54:18] 00:1d:93:11:22:33: ### transmitted data using IV=130 (seq=131)
+[09:54:18] 00:1d:93:11:22:33: ### transmitted data using IV=131 (seq=132)
+[09:54:18] 00:1d:93:11:22:33: ### transmitted data using IV=132 (seq=133)
+[09:54:19] 00:1d:93:11:22:33: sent 2 broadcasts ARPs this interval
+[09:54:19] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[09:54:21] 00:1d:93:11:22:33: sent 3 broadcasts ARPs this interval
+[09:54:21] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[09:54:23] 00:1d:93:11:22:33: sent 4 broadcasts ARPs this interval
+[09:54:23] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[09:54:25] 00:1d:93:11:22:33: got a reply to broadcast ARP during this interval
+[09:54:25] 00:1d:93:11:22:33: sent 1 broadcasts ARPs this interval
+[09:54:25] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[09:54:25] 00:1d:93:11:22:33: ### transmitted data using IV=133 (seq=134)
+[09:54:25] 00:1d:93:11:22:33: received 11 replies to the replayed broadcast ARP requests
+[09:54:27] 00:1d:93:11:22:33: sent 2 broadcasts ARPs this interval
+[09:54:27] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[09:54:29] 00:1d:93:11:22:33: sent 3 broadcasts ARPs this interval
+[09:54:29] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[09:54:31] 00:1d:93:11:22:33: sent 4 broadcasts ARPs this interval
+[09:54:31] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[09:54:31] 00:1d:93:11:22:33: received 12 replies to the replayed broadcast ARP requests
+[09:54:31] 00:1d:93:11:22:33: ### transmitted data using IV=134 (seq=135)
+wlan0: STA 00:1d:93:11:22:33 WPA: group key handshake completed (RSN)
+[09:54:31] 00:1d:93:11:22:33: ### transmitted data using IV=135 (seq=136)
+[09:54:31] 00:1d:93:11:22:33: ### transmitted data using IV=136 (seq=137)
+[09:54:31] 00:1d:93:11:22:33: ### transmitted data using IV=137 (seq=138)
+[09:54:31] 00:1d:93:11:22:33: ### transmitted data using IV=138 (seq=139)
+[09:54:31] 00:1d:93:11:22:33: ### transmitted data using IV=139 (seq=140)
+[09:54:31] 00:1d:93:11:22:33: ### transmitted data using IV=140 (seq=141)
+[09:54:31] 00:1d:93:11:22:33: ### transmitted data using IV=140 (seq=141)
+[09:54:31] 00:1d:93:11:22:33: ### transmitted data using IV=141 (seq=142)
+[09:54:31] 00:1d:93:11:22:33: ### transmitted data using IV=141 (seq=142)
+wlan0: STA 00:1d:93:11:22:33 WPA: group key handshake completed (RSN)
+[09:54:31] 00:1d:93:11:22:33: ### transmitted data using IV=142 (seq=143)
+[09:54:31] 00:1d:93:11:22:33: ### transmitted data using IV=143 (seq=144)
+[09:54:33] 00:1d:93:11:22:33: got a reply to broadcast ARP during this interval
+[09:54:33] 00:1d:93:11:22:33: sent 1 broadcasts ARPs this interval
+[09:54:33] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[09:54:33] 00:1d:93:11:22:33: ### transmitted data using IV=144 (seq=145)
+[09:54:33] 00:1d:93:11:22:33: received 13 replies to the replayed broadcast ARP requests
+[09:54:35] 00:1d:93:11:22:33: sent 2 broadcasts ARPs this interval
+[09:54:35] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[09:54:35] 00:1d:93:11:22:33: ### transmitted data using IV=145 (seq=146)
+[09:54:35] 00:1d:93:11:22:33: received 14 replies to the replayed broadcast ARP requests
+wlan0: STA 00:1d:93:11:22:33 WPA: group key handshake completed (RSN)
+[09:54:35] 00:1d:93:11:22:33: ### transmitted data using IV=146 (seq=147)
+[09:54:35] 00:1d:93:11:22:33: ### transmitted data using IV=147 (seq=148)
+[09:54:35] 00:1d:93:11:22:33: ### transmitted data using IV=148 (seq=149)
+[09:54:35] 00:1d:93:11:22:33: ### transmitted data using IV=149 (seq=150)
+[09:54:36] 00:1d:93:11:22:33: ### transmitted data using IV=150 (seq=151)
+wlan0: STA 00:1d:93:11:22:33 WPA: group key handshake completed (RSN)
+[09:54:36] 00:1d:93:11:22:33: ### transmitted data using IV=151 (seq=152)
+[09:54:36] 00:1d:93:11:22:33: ### transmitted data using IV=152 (seq=153)
+[09:54:36] 00:1d:93:11:22:33: ### transmitted data using IV=153 (seq=154)
+[09:54:36] 00:1d:93:11:22:33: ### transmitted data using IV=154 (seq=155)
+[09:54:36] 00:1d:93:11:22:33: ### transmitted data using IV=155 (seq=156)
+[09:54:36] 00:1d:93:11:22:33: ### transmitted data using IV=156 (seq=157)
+[09:54:36] 00:1d:93:11:22:33: ### transmitted data using IV=157 (seq=158)
+[09:54:36] 00:1d:93:11:22:33: ### transmitted data using IV=158 (seq=159)
+[09:54:36] 00:1d:93:11:22:33: ### transmitted data using IV=159 (seq=160)
+[09:54:37] 00:1d:93:11:22:33: sent 3 broadcasts ARPs this interval
+[09:54:37] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[09:54:39] 00:1d:93:11:22:33: sent 4 broadcasts ARPs this interval
+[09:54:39] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[09:54:39] 00:1d:93:11:22:33: ### transmitted data using IV=160 (seq=161)
+wlan0: STA 00:1d:93:11:22:33 WPA: group key handshake completed (RSN)
+[09:54:39] 00:1d:93:11:22:33: ### transmitted data using IV=161 (seq=162)
+[09:54:39] 00:1d:93:11:22:33: ### transmitted data using IV=162 (seq=163)
+[09:54:39] 00:1d:93:11:22:33: ### transmitted data using IV=163 (seq=164)
+[09:54:39] 00:1d:93:11:22:33: ### transmitted data using IV=164 (seq=165)
+[09:54:39] 00:1d:93:11:22:33: ### transmitted data using IV=165 (seq=166)
+[09:54:41] 00:1d:93:11:22:33: got a reply to broadcast ARP during this interval
+[09:54:41] 00:1d:93:11:22:33: sent 1 broadcasts ARPs this interval
+[09:54:41] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[09:54:41] 00:1d:93:11:22:33: ### transmitted data using IV=166 (seq=167)
+wlan0: STA 00:1d:93:11:22:33 WPA: group key handshake completed (RSN)
+[09:54:41] 00:1d:93:11:22:33: ### transmitted data using IV=167 (seq=168)
+[09:54:41] 00:1d:93:11:22:33: ### transmitted data using IV=168 (seq=169)
+[09:54:41] 00:1d:93:11:22:33: ### transmitted data using IV=169 (seq=170)
+[09:54:43] 00:1d:93:11:22:33: sent 2 broadcasts ARPs this interval
+[09:54:43] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[09:54:45] 00:1d:93:11:22:33: sent 3 broadcasts ARPs this interval
+[09:54:45] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[09:54:47] 00:1d:93:11:22:33: sent 4 broadcasts ARPs this interval
+[09:54:47] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[09:54:47] 00:1d:93:11:22:33: ### transmitted data using IV=170 (seq=171)
+[09:54:47] 00:1d:93:11:22:33: received 15 replies to the replayed broadcast ARP requests
+wlan0: STA 00:1d:93:11:22:33 WPA: group key handshake completed (RSN)
+[09:54:47] 00:1d:93:11:22:33: ### transmitted data using IV=171 (seq=172)
+[09:54:47] 00:1d:93:11:22:33: ### transmitted data using IV=172 (seq=173)
+[09:54:47] 00:1d:93:11:22:33: ### transmitted data using IV=173 (seq=174)
+[09:54:47] 00:1d:93:11:22:33: ### transmitted data using IV=174 (seq=175)
+[09:54:47] 00:1d:93:11:22:33: ### transmitted data using IV=175 (seq=176)
+[09:54:47] 00:1d:93:11:22:33: ### transmitted data using IV=176 (seq=177)
+[09:54:49] 00:1d:93:11:22:33: got a reply to broadcast ARP during this interval
+[09:54:49] 00:1d:93:11:22:33: sent 1 broadcasts ARPs this interval
+[09:54:49] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[09:54:51] 00:1d:93:11:22:33: sent 2 broadcasts ARPs this interval
+[09:54:51] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[09:54:51] 00:1d:93:11:22:33: ### transmitted data using IV=177 (seq=178)
+wlan0: STA 00:1d:93:11:22:33 WPA: group key handshake completed (RSN)
+[09:54:51] 00:1d:93:11:22:33: ### transmitted data using IV=178 (seq=179)
+[09:54:51] 00:1d:93:11:22:33: ### transmitted data using IV=179 (seq=180)
+[09:54:51] 00:1d:93:11:22:33: ### transmitted data using IV=180 (seq=181)
+[09:54:51] 00:1d:93:11:22:33: ### transmitted data using IV=181 (seq=182)
+[09:54:51] 00:1d:93:11:22:33: ### transmitted data using IV=182 (seq=183)
+[09:54:51] 00:1d:93:11:22:33: ### transmitted data using IV=183 (seq=184)
+[09:54:51] 00:1d:93:11:22:33: ### transmitted data using IV=184 (seq=185)
+[09:54:51] 00:1d:93:11:22:33: ### transmitted data using IV=185 (seq=186)
+[09:54:53] 00:1d:93:11:22:33: sent 3 broadcasts ARPs this interval
+[09:54:53] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[09:54:53] 00:1d:93:11:22:33: ### transmitted data using IV=186 (seq=187)
+[09:54:53] 00:1d:93:11:22:33: received 16 replies to the replayed broadcast ARP requests
+wlan0: STA 00:1d:93:11:22:33 WPA: group key handshake completed (RSN)
+[09:54:53] 00:1d:93:11:22:33: ### transmitted data using IV=187 (seq=188)
+[09:54:53] 00:1d:93:11:22:33: ### transmitted data using IV=188 (seq=189)
+[09:54:53] 00:1d:93:11:22:33: ### transmitted data using IV=189 (seq=190)
+[09:54:53] 00:1d:93:11:22:33: ### transmitted data using IV=190 (seq=191)
+[09:54:53] 00:1d:93:11:22:33: ### transmitted data using IV=190 (seq=191)
+[09:54:55] 00:1d:93:11:22:33: sent 4 broadcasts ARPs this interval
+[09:54:55] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[09:54:57] 00:1d:93:11:22:33: got a reply to broadcast ARP during this interval
+[09:54:57] 00:1d:93:11:22:33: sent 1 broadcasts ARPs this interval
+[09:54:57] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[09:54:57] 00:1d:93:11:22:33: ### transmitted data using IV=191 (seq=192)
+[09:54:57] 00:1d:93:11:22:33: received 17 replies to the replayed broadcast ARP requests
+[09:54:57] 00:1d:93:11:22:33: ### transmitted data using IV=191 (seq=192)
+wlan0: STA 00:1d:93:11:22:33 WPA: group key handshake completed (RSN)
+[09:54:57] 00:1d:93:11:22:33: ### transmitted data using IV=192 (seq=193)
+[09:54:57] 00:1d:93:11:22:33: ### transmitted data using IV=193 (seq=194)
+[09:54:57] 00:1d:93:11:22:33: ### transmitted data using IV=194 (seq=195)
+[09:54:57] 00:1d:93:11:22:33: ### transmitted data using IV=195 (seq=196)
+[09:54:57] 00:1d:93:11:22:33: ### transmitted data using IV=196 (seq=197)
+[09:54:57] 00:1d:93:11:22:33: ### transmitted data using IV=197 (seq=198)
+wlan0: STA 00:1d:93:11:22:33 WPA: group key handshake completed (RSN)
+[09:54:57] 00:1d:93:11:22:33: ### transmitted data using IV=198 (seq=199)
+[09:54:57] 00:1d:93:11:22:33: ### transmitted data using IV=199 (seq=200)
+[09:54:57] 00:1d:93:11:22:33: ### transmitted data using IV=200 (seq=201)
+[09:54:57] 00:1d:93:11:22:33: ### transmitted data using IV=201 (seq=202)
+[09:54:57] 00:1d:93:11:22:33: ### transmitted data using IV=202 (seq=203)
+[09:54:57] 00:1d:93:11:22:33: ### transmitted data using IV=202 (seq=203)
+[09:54:57] 00:1d:93:11:22:33: ### transmitted data using IV=203 (seq=204)
+[09:54:57] 00:1d:93:11:22:33: ### transmitted data using IV=204 (seq=205)
+[09:54:59] 00:1d:93:11:22:33: sent 2 broadcasts ARPs this interval
+[09:54:59] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[09:54:59] 00:1d:93:11:22:33: ### transmitted data using IV=205 (seq=206)
+[09:54:59] 00:1d:93:11:22:33: received 18 replies to the replayed broadcast ARP requests
+[09:55:00] 00:1d:93:11:22:33: ### transmitted data using IV=206 (seq=207)
+wlan0: STA 00:1d:93:11:22:33 WPA: group key handshake completed (RSN)
+[09:55:00] 00:1d:93:11:22:33: ### transmitted data using IV=207 (seq=208)
+[09:55:00] 00:1d:93:11:22:33: ### transmitted data using IV=208 (seq=209)
+[09:55:00] 00:1d:93:11:22:33: ### transmitted data using IV=209 (seq=210)
+[09:55:00] 00:1d:93:11:22:33: ### transmitted data using IV=210 (seq=211)
+[09:55:00] 00:1d:93:11:22:33: ### transmitted data using IV=211 (seq=212)
+[09:55:01] 00:1d:93:11:22:33: sent 3 broadcasts ARPs this interval
+[09:55:01] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[09:55:01] 00:1d:93:11:22:33: received 19 replies to the replayed broadcast ARP requests
+[09:55:01] 00:1d:93:11:22:33: ### transmitted data using IV=212 (seq=213)
+[09:55:02] 00:1d:93:11:22:33: ### transmitted data using IV=213 (seq=214)
+wlan0: STA 00:1d:93:11:22:33 WPA: group key handshake completed (RSN)
+[09:55:03] 00:1d:93:11:22:33: ### transmitted data using IV=213 (seq=214)
+[09:55:03] 00:1d:93:11:22:33: ### transmitted data using IV=214 (seq=215)
+[09:55:03] 00:1d:93:11:22:33: ### transmitted data using IV=215 (seq=216)
+[09:55:03] 00:1d:93:11:22:33: ### transmitted data using IV=216 (seq=217)
+[09:55:03] 00:1d:93:11:22:33: ### transmitted data using IV=217 (seq=218)
+[09:55:03] 00:1d:93:11:22:33: ### transmitted data using IV=218 (seq=219)
+[09:55:03] 00:1d:93:11:22:33: sent 4 broadcasts ARPs this interval
+[09:55:03] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[09:55:05] 00:1d:93:11:22:33: got a reply to broadcast ARP during this interval
+[09:55:05] 00:1d:93:11:22:33: sent 1 broadcasts ARPs this interval
+[09:55:05] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[09:55:07] 00:1d:93:11:22:33: sent 2 broadcasts ARPs this interval
+[09:55:07] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[09:55:09] 00:1d:93:11:22:33: sent 3 broadcasts ARPs this interval
+[09:55:09] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+wlan0: STA 00:1d:93:11:22:33 IEEE 802.11: authenticated
+wlan0: STA 00:1d:93:11:22:33 IEEE 802.11: associated (aid 1)
+wlan0: STA 00:1d:93:11:22:33 RADIUS: starting accounting session 3DE5325A53ABBB6E
+wlan0: STA 00:1d:93:11:22:33 WPA: pairwise key handshake completed (RSN)
+[09:55:09] 00:1d:93:11:22:33: ### transmitted data using IV=1 (seq=2)
+[09:55:10] 00:1d:93:11:22:33: ### transmitted data using IV=2 (seq=3)
+[09:55:10] 00:1d:93:11:22:33: ### transmitted data using IV=3 (seq=4)
+[09:55:10] 00:1d:93:11:22:33: ### transmitted data using IV=4 (seq=5)
+[09:55:10] 00:1d:93:11:22:33: ### transmitted data using IV=5 (seq=6)
+[09:55:11] 00:1d:93:11:22:33: sent 4 broadcasts ARPs this interval
+[09:55:11] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[09:55:11] 00:1d:93:11:22:33: ### transmitted data using IV=6 (seq=7)
+[09:55:11] 00:1d:93:11:22:33: received 20 replies to the replayed broadcast ARP requests
+[09:55:13] 00:1d:93:11:22:33: got a reply to broadcast ARP during this interval
+[09:55:13] 00:1d:93:11:22:33: sent 1 broadcasts ARPs this interval
+[09:55:13] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[09:55:15] 00:1d:93:11:22:33: sent 2 broadcasts ARPs this interval
+[09:55:15] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[09:55:17] 00:1d:93:11:22:33: sent 3 broadcasts ARPs this interval
+[09:55:17] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+wlan0: STA 00:1d:93:11:22:33 IEEE 802.11: authenticated
+wlan0: STA 00:1d:93:11:22:33 IEEE 802.11: authenticated
+wlan0: STA 00:1d:93:11:22:33 IEEE 802.11: associated (aid 1)
+wlan0: STA 00:1d:93:11:22:33 RADIUS: starting accounting session 3DE5325A53ABBB6E
+wlan0: STA 00:1d:93:11:22:33 WPA: pairwise key handshake completed (RSN)
+[09:55:18] 00:1d:93:11:22:33: ### transmitted data using IV=1 (seq=2)
+[09:55:18] 00:1d:93:11:22:33: ### transmitted data using IV=2 (seq=3)
+[09:55:18] 00:1d:93:11:22:33: ### transmitted data using IV=3 (seq=4)
+[09:55:18] 00:1d:93:11:22:33: ### transmitted data using IV=4 (seq=5)
+[09:55:18] 00:1d:93:11:22:33: ### transmitted data using IV=5 (seq=6)
+[09:55:19] 00:1d:93:11:22:33: sent 4 broadcasts ARPs this interval
+[09:55:19] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[09:55:21] 00:1d:93:11:22:33: no group IV resets seem to have occured for 0 interval(s)
+[09:55:21] 00:1d:93:11:22:33: sent 1 broadcasts ARPs this interval
+[09:55:21] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[09:55:21] 00:1d:93:11:22:33: ### transmitted data using IV=6 (seq=7)
+[09:55:21] 00:1d:93:11:22:33: received 21 replies to the replayed broadcast ARP requests
+wlan0: STA 00:1d:93:11:22:33 WPA: group key handshake completed (RSN)
+[09:55:21] 00:1d:93:11:22:33: ### transmitted data using IV=7 (seq=8)
+[09:55:21] 00:1d:93:11:22:33: ### transmitted data using IV=8 (seq=9)
+[09:55:21] 00:1d:93:11:22:33: ### transmitted data using IV=9 (seq=10)
+[09:55:21] 00:1d:93:11:22:33: ### transmitted data using IV=10 (seq=11)
+[09:55:23] 00:1d:93:11:22:33: sent 2 broadcasts ARPs this interval
+[09:55:23] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[09:55:23] 00:1d:93:11:22:33: received 22 replies to the replayed broadcast ARP requests
+[09:55:23] 00:1d:93:11:22:33: ### transmitted data using IV=11 (seq=12)
+[09:55:25] 00:1d:93:11:22:33: sent 3 broadcasts ARPs this interval
+[09:55:25] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[09:55:27] 00:1d:93:11:22:33: sent 4 broadcasts ARPs this interval
+[09:55:27] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[09:55:27] 00:1d:93:11:22:33: ### transmitted data using IV=12 (seq=13)
+wlan0: STA 00:1d:93:11:22:33 WPA: group key handshake completed (RSN)
+[09:55:27] 00:1d:93:11:22:33: received 23 replies to the replayed broadcast ARP requests
+[09:55:27] 00:1d:93:11:22:33: ### transmitted data using IV=13 (seq=14)
+[09:55:27] 00:1d:93:11:22:33: ### transmitted data using IV=14 (seq=15)
+[09:55:27] 00:1d:93:11:22:33: ### transmitted data using IV=15 (seq=16)
+[09:55:27] 00:1d:93:11:22:33: ### transmitted data using IV=16 (seq=17)
+[09:55:29] 00:1d:93:11:22:33: got a reply to broadcast ARP during this interval
+[09:55:29] 00:1d:93:11:22:33: sent 1 broadcasts ARPs this interval
+[09:55:29] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[09:55:31] 00:1d:93:11:22:33: sent 2 broadcasts ARPs this interval
+[09:55:31] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[09:55:33] 00:1d:93:11:22:33: sent 3 broadcasts ARPs this interval
+[09:55:33] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[09:55:35] 00:1d:93:11:22:33: sent 4 broadcasts ARPs this interval
+[09:55:35] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[09:55:37] 00:1d:93:11:22:33: no group IV resets seem to have occured for 1 interval(s)
+[09:55:37] 00:1d:93:11:22:33: sent 1 broadcasts ARPs this interval
+[09:55:37] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[09:55:39] 00:1d:93:11:22:33: sent 2 broadcasts ARPs this interval
+[09:55:39] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+wlan0: STA 00:1d:93:11:22:33 IEEE 802.11: authenticated
+wlan0: STA 00:1d:93:11:22:33 IEEE 802.11: associated (aid 1)
+wlan0: STA 00:1d:93:11:22:33 RADIUS: starting accounting session 3DE5325A53ABBB6E
+wlan0: STA 00:1d:93:11:22:33 WPA: pairwise key handshake completed (RSN)
+[09:55:40] 00:1d:93:11:22:33: ### transmitted data using IV=1 (seq=2)
+[09:55:40] 00:1d:93:11:22:33: ### transmitted data using IV=2 (seq=3)
+[09:55:40] 00:1d:93:11:22:33: ### transmitted data using IV=3 (seq=4)
+[09:55:40] 00:1d:93:11:22:33: DHCP reply 192.168.100.2 to 00:1d:93:11:22:33
+[09:55:40] 00:1d:93:11:22:33: ### transmitted data using IV=3 (seq=4)
+[09:55:40] 00:1d:93:11:22:33: ### transmitted data using IV=4 (seq=5)
+[09:55:40] 00:1d:93:11:22:33: DHCP reply 192.168.100.2 to 00:1d:93:11:22:33
+[09:55:41] 00:1d:93:11:22:33: ### transmitted data using IV=5 (seq=6)
+[09:55:41] 00:1d:93:11:22:33: ### transmitted data using IV=6 (seq=7)
+[09:55:41] 00:1d:93:11:22:33: ### transmitted data using IV=7 (seq=8)
+[09:55:41] 00:1d:93:11:22:33: ### transmitted data using IV=8 (seq=9)
+[09:55:41] 00:1d:93:11:22:33: ### transmitted data using IV=9 (seq=10)
+[09:55:41] 00:1d:93:11:22:33: ### transmitted data using IV=10 (seq=11)
+[09:55:41] 00:1d:93:11:22:33: ### transmitted data using IV=11 (seq=12)
+[09:55:41] 00:1d:93:11:22:33: ### transmitted data using IV=11 (seq=12)
+[09:55:41] 00:1d:93:11:22:33: ### transmitted data using IV=12 (seq=13)
+[09:55:41] 00:1d:93:11:22:33: ### transmitted data using IV=13 (seq=14)
+[09:55:41] 00:1d:93:11:22:33: ### transmitted data using IV=14 (seq=15)
+[09:55:41] 00:1d:93:11:22:33: ### transmitted data using IV=14 (seq=15)
+[09:55:41] 00:1d:93:11:22:33: sent 3 broadcasts ARPs this interval
+[09:55:41] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+wlan0: STA 00:1d:93:11:22:33 WPA: group key handshake completed (RSN)
+[09:55:41] 00:1d:93:11:22:33: ### transmitted data using IV=15 (seq=16)
+[09:55:41] 00:1d:93:11:22:33: ### transmitted data using IV=16 (seq=17)
+[09:55:41] 00:1d:93:11:22:33: ### transmitted data using IV=17 (seq=18)
+[09:55:42] 00:1d:93:11:22:33: ### transmitted data using IV=18 (seq=19)
+[09:55:42] 00:1d:93:11:22:33: ### transmitted data using IV=19 (seq=20)
+[09:55:43] 00:1d:93:11:22:33: sent 4 broadcasts ARPs this interval
+[09:55:43] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[09:55:44] 00:1d:93:11:22:33: ### transmitted data using IV=20 (seq=21)
+[09:55:44] 00:1d:93:11:22:33: ### transmitted data using IV=21 (seq=22)
+wlan0: STA 00:1d:93:11:22:33 WPA: group key handshake completed (RSN)
+[09:55:44] 00:1d:93:11:22:33: ### transmitted data using IV=22 (seq=23)
+[09:55:44] 00:1d:93:11:22:33: ### transmitted data using IV=23 (seq=24)
+[09:55:45] 00:1d:93:11:22:33: no group IV resets seem to have occured for 2 interval(s)
+[09:55:45] 00:1d:93:11:22:33: sent 1 broadcasts ARPs this interval
+[09:55:45] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[09:55:45] 00:1d:93:11:22:33: ### transmitted data using IV=24 (seq=25)
+wlan0: STA 00:1d:93:11:22:33 WPA: group key handshake completed (RSN)
+[09:55:45] 00:1d:93:11:22:33: ### transmitted data using IV=25 (seq=26)
+[09:55:45] 00:1d:93:11:22:33: ### transmitted data using IV=26 (seq=27)
+[09:55:46] 00:1d:93:11:22:33: ### transmitted data using IV=27 (seq=28)
+[09:55:46] 00:1d:93:11:22:33: ### transmitted data using IV=28 (seq=29)
+[09:55:46] 00:1d:93:11:22:33: ### transmitted data using IV=29 (seq=30)
+[09:55:46] 00:1d:93:11:22:33: ### transmitted data using IV=30 (seq=31)
+[09:55:46] 00:1d:93:11:22:33: ### transmitted data using IV=31 (seq=32)
+[09:55:47] 00:1d:93:11:22:33: ### transmitted data using IV=32 (seq=33)
+[09:55:47] 00:1d:93:11:22:33: ### transmitted data using IV=33 (seq=34)
+[09:55:47] 00:1d:93:11:22:33: sent 2 broadcasts ARPs this interval
+[09:55:47] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[09:55:47] 00:1d:93:11:22:33: ### transmitted data using IV=34 (seq=35)
+[09:55:47] 00:1d:93:11:22:33: received 24 replies to the replayed broadcast ARP requests
+[09:55:48] 00:1d:93:11:22:33: ### transmitted data using IV=35 (seq=36)
+wlan0: STA 00:1d:93:11:22:33 WPA: group key handshake completed (RSN)
+[09:55:48] 00:1d:93:11:22:33: ### transmitted data using IV=36 (seq=37)
+[09:55:48] 00:1d:93:11:22:33: ### transmitted data using IV=37 (seq=38)
+[09:55:48] 00:1d:93:11:22:33: ### transmitted data using IV=38 (seq=39)
+[09:55:48] 00:1d:93:11:22:33: ### transmitted data using IV=39 (seq=40)
+[09:55:49] 00:1d:93:11:22:33: ### transmitted data using IV=40 (seq=41)
+[09:55:49] 00:1d:93:11:22:33: ### transmitted data using IV=41 (seq=42)
+[09:55:49] 00:1d:93:11:22:33: sent 3 broadcasts ARPs this interval
+[09:55:49] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[09:55:49] 00:1d:93:11:22:33: ### transmitted data using IV=42 (seq=43)
+wlan0: STA 00:1d:93:11:22:33 WPA: group key handshake completed (RSN)
+[09:55:49] 00:1d:93:11:22:33: ### transmitted data using IV=43 (seq=44)
+[09:55:49] 00:1d:93:11:22:33: ### transmitted data using IV=44 (seq=45)
+[09:55:50] 00:1d:93:11:22:33: ### transmitted data using IV=45 (seq=46)
+[09:55:50] 00:1d:93:11:22:33: ### transmitted data using IV=46 (seq=47)
+[09:55:51] 00:1d:93:11:22:33: ### transmitted data using IV=47 (seq=48)
+[09:55:51] 00:1d:93:11:22:33: ### transmitted data using IV=48 (seq=49)
+[09:55:51] 00:1d:93:11:22:33: ### transmitted data using IV=49 (seq=50)
+[09:55:51] 00:1d:93:11:22:33: sent 4 broadcasts ARPs this interval
+[09:55:51] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[09:55:53] 00:1d:93:11:22:33: got a reply to broadcast ARP during this interval
+[09:55:53] 00:1d:93:11:22:33: sent 1 broadcasts ARPs this interval
+[09:55:53] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[09:55:55] 00:1d:93:11:22:33: ### transmitted data using IV=50 (seq=51)
+wlan0: STA 00:1d:93:11:22:33 WPA: group key handshake completed (RSN)
+[09:55:55] 00:1d:93:11:22:33: ### transmitted data using IV=51 (seq=52)
+[09:55:55] 00:1d:93:11:22:33: ### transmitted data using IV=52 (seq=53)
+[09:55:55] 00:1d:93:11:22:33: ### transmitted data using IV=53 (seq=54)
+[09:55:55] 00:1d:93:11:22:33: ### transmitted data using IV=54 (seq=55)
+[09:55:55] 00:1d:93:11:22:33: ### transmitted data using IV=55 (seq=56)
+[09:55:55] 00:1d:93:11:22:33: ### transmitted data using IV=56 (seq=57)
+[09:55:55] 00:1d:93:11:22:33: ### transmitted data using IV=57 (seq=58)
+[09:55:55] 00:1d:93:11:22:33: ### transmitted data using IV=58 (seq=59)
+[09:55:55] 00:1d:93:11:22:33: ### transmitted data using IV=59 (seq=60)
+[09:55:55] 00:1d:93:11:22:33: ### transmitted data using IV=60 (seq=61)
+[09:55:55] 00:1d:93:11:22:33: sent 2 broadcasts ARPs this interval
+[09:55:55] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[09:55:56] 00:1d:93:11:22:33: ### transmitted data using IV=61 (seq=62)
+wlan0: STA 00:1d:93:11:22:33 WPA: group key handshake completed (RSN)
+[09:55:56] 00:1d:93:11:22:33: ### transmitted data using IV=62 (seq=63)
+[09:55:56] 00:1d:93:11:22:33: ### transmitted data using IV=63 (seq=64)
+[09:55:56] 00:1d:93:11:22:33: ### transmitted data using IV=64 (seq=65)
+[09:55:56] 00:1d:93:11:22:33: ### transmitted data using IV=65 (seq=66)
+[09:55:57] 00:1d:93:11:22:33: sent 3 broadcasts ARPs this interval
+[09:55:57] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[09:55:58] 00:1d:93:11:22:33: ### transmitted data using IV=66 (seq=67)
+wlan0: STA 00:1d:93:11:22:33 WPA: group key handshake completed (RSN)
+[09:55:58] 00:1d:93:11:22:33: ### transmitted data using IV=67 (seq=68)
+[09:55:58] 00:1d:93:11:22:33: ### transmitted data using IV=68 (seq=69)
+[09:55:58] 00:1d:93:11:22:33: ### transmitted data using IV=69 (seq=70)
+[09:55:59] 00:1d:93:11:22:33: sent 4 broadcasts ARPs this interval
+[09:55:59] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[09:55:59] 00:1d:93:11:22:33: ### transmitted data using IV=70 (seq=71)
+[09:55:59] 00:1d:93:11:22:33: received 25 replies to the replayed broadcast ARP requests
+[09:56:00] 00:1d:93:11:22:33: ### transmitted data using IV=71 (seq=72)
+wlan0: STA 00:1d:93:11:22:33 WPA: group key handshake completed (RSN)
+[09:56:00] 00:1d:93:11:22:33: ### transmitted data using IV=72 (seq=73)
+[09:56:00] 00:1d:93:11:22:33: ### transmitted data using IV=73 (seq=74)
+[09:56:00] 00:1d:93:11:22:33: ### transmitted data using IV=73 (seq=74)
+[09:56:00] 00:1d:93:11:22:33: ### transmitted data using IV=73 (seq=74)
+[09:56:01] 00:1d:93:11:22:33: got a reply to broadcast ARP during this interval
+[09:56:01] 00:1d:93:11:22:33: sent 1 broadcasts ARPs this interval
+[09:56:01] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[09:56:03] 00:1d:93:11:22:33: sent 2 broadcasts ARPs this interval
+[09:56:03] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[09:56:05] 00:1d:93:11:22:33: ### transmitted data using IV=74 (seq=75)
+[09:56:05] 00:1d:93:11:22:33: ### transmitted data using IV=74 (seq=75)
+wlan0: STA 00:1d:93:11:22:33 WPA: group key handshake completed (RSN)
+[09:56:05] 00:1d:93:11:22:33: ### transmitted data using IV=75 (seq=76)
+[09:56:05] 00:1d:93:11:22:33: ### transmitted data using IV=76 (seq=77)
+[09:56:05] 00:1d:93:11:22:33: ### transmitted data using IV=76 (seq=77)
+[09:56:05] 00:1d:93:11:22:33: ### transmitted data using IV=76 (seq=77)
+[09:56:05] 00:1d:93:11:22:33: ### transmitted data using IV=77 (seq=78)
+[09:56:05] 00:1d:93:11:22:33: ### transmitted data using IV=78 (seq=79)
+[09:56:05] 00:1d:93:11:22:33: ### transmitted data using IV=79 (seq=80)
+[09:56:05] 00:1d:93:11:22:33: ### transmitted data using IV=79 (seq=80)
+[09:56:05] 00:1d:93:11:22:33: ### transmitted data using IV=80 (seq=81)
+[09:56:05] 00:1d:93:11:22:33: ### transmitted data using IV=80 (seq=81)
+[09:56:05] 00:1d:93:11:22:33: sent 3 broadcasts ARPs this interval
+[09:56:05] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[09:56:07] 00:1d:93:11:22:33: ### transmitted data using IV=81 (seq=82)
+wlan0: STA 00:1d:93:11:22:33 WPA: group key handshake completed (RSN)
+[09:56:07] 00:1d:93:11:22:33: ### transmitted data using IV=82 (seq=83)
+[09:56:07] 00:1d:93:11:22:33: ### transmitted data using IV=83 (seq=84)
+[09:56:07] 00:1d:93:11:22:33: ### transmitted data using IV=84 (seq=85)
+[09:56:07] 00:1d:93:11:22:33: ### transmitted data using IV=85 (seq=86)
+[09:56:07] 00:1d:93:11:22:33: ### transmitted data using IV=86 (seq=87)
+[09:56:07] 00:1d:93:11:22:33: sent 4 broadcasts ARPs this interval
+[09:56:07] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[09:56:09] 00:1d:93:11:22:33: no group IV resets seem to have occured for 3 interval(s)
+[09:56:09] 00:1d:93:11:22:33: sent 1 broadcasts ARPs this interval
+[09:56:09] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[09:56:11] 00:1d:93:11:22:33: sent 2 broadcasts ARPs this interval
+[09:56:11] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[09:56:11] 00:1d:93:11:22:33: ### transmitted data using IV=87 (seq=88)
+[09:56:11] 00:1d:93:11:22:33: received 26 replies to the replayed broadcast ARP requests
+[09:56:12] 00:1d:93:11:22:33: ### transmitted data using IV=88 (seq=89)
+wlan0: STA 00:1d:93:11:22:33 WPA: group key handshake completed (RSN)
+[09:56:12] 00:1d:93:11:22:33: ### transmitted data using IV=88 (seq=89)
+[09:56:12] 00:1d:93:11:22:33: ### transmitted data using IV=88 (seq=89)
+[09:56:12] 00:1d:93:11:22:33: ### transmitted data using IV=89 (seq=90)
+[09:56:12] 00:1d:93:11:22:33: ### transmitted data using IV=90 (seq=91)
+[09:56:12] 00:1d:93:11:22:33: ### transmitted data using IV=91 (seq=92)
+[09:56:12] 00:1d:93:11:22:33: ### transmitted data using IV=92 (seq=93)
+[09:56:12] 00:1d:93:11:22:33: ### transmitted data using IV=93 (seq=94)
+[09:56:12] 00:1d:93:11:22:33: ### transmitted data using IV=94 (seq=95)
+[09:56:13] 00:1d:93:11:22:33: sent 3 broadcasts ARPs this interval
+[09:56:13] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[09:56:15] 00:1d:93:11:22:33: ### transmitted data using IV=95 (seq=96)
+wlan0: STA 00:1d:93:11:22:33 WPA: group key handshake completed (RSN)
+[09:56:15] 00:1d:93:11:22:33: ### transmitted data using IV=96 (seq=97)
+[09:56:15] 00:1d:93:11:22:33: ### transmitted data using IV=97 (seq=98)
+[09:56:15] 00:1d:93:11:22:33: ### transmitted data using IV=97 (seq=98)
+[09:56:15] 00:1d:93:11:22:33: ### transmitted data using IV=98 (seq=99)
+[09:56:15] 00:1d:93:11:22:33: ### transmitted data using IV=99 (seq=100)
+[09:56:15] 00:1d:93:11:22:33: sent 4 broadcasts ARPs this interval
+[09:56:15] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[09:56:15] 00:1d:93:11:22:33: ### transmitted data using IV=100 (seq=101)
+[09:56:15] 00:1d:93:11:22:33: received 27 replies to the replayed broadcast ARP requests
+[09:56:17] 00:1d:93:11:22:33: ### transmitted data using IV=101 (seq=102)
+wlan0: STA 00:1d:93:11:22:33 WPA: group key handshake completed (RSN)
+[09:56:17] 00:1d:93:11:22:33: ### transmitted data using IV=102 (seq=103)
+[09:56:17] 00:1d:93:11:22:33: ### transmitted data using IV=103 (seq=104)
+[09:56:17] 00:1d:93:11:22:33: got a reply to broadcast ARP during this interval
+[09:56:17] 00:1d:93:11:22:33: sent 1 broadcasts ARPs this interval
+[09:56:17] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[09:56:17] 00:1d:93:11:22:33: ### transmitted data using IV=104 (seq=105)
+[09:56:17] 00:1d:93:11:22:33: received 28 replies to the replayed broadcast ARP requests
+wlan0: STA 00:1d:93:11:22:33 WPA: group key handshake completed (RSN)
+[09:56:17] 00:1d:93:11:22:33: ### transmitted data using IV=104 (seq=105)
+[09:56:17] 00:1d:93:11:22:33: ### transmitted data using IV=105 (seq=106)
+[09:56:17] 00:1d:93:11:22:33: ### transmitted data using IV=106 (seq=107)
+[09:56:19] 00:1d:93:11:22:33: sent 2 broadcasts ARPs this interval
+[09:56:19] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[09:56:19] 00:1d:93:11:22:33: ### transmitted data using IV=107 (seq=108)
+[09:56:19] 00:1d:93:11:22:33: received 29 replies to the replayed broadcast ARP requests
+wlan0: STA 00:1d:93:11:22:33 WPA: group key handshake completed (RSN)
+[09:56:19] 00:1d:93:11:22:33: ### transmitted data using IV=108 (seq=109)
+[09:56:19] 00:1d:93:11:22:33: ### transmitted data using IV=109 (seq=110)
+[09:56:20] 00:1d:93:11:22:33: ### transmitted data using IV=110 (seq=111)
+[09:56:20] 00:1d:93:11:22:33: ### transmitted data using IV=111 (seq=112)
+[09:56:21] 00:1d:93:11:22:33: sent 3 broadcasts ARPs this interval
+[09:56:21] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[09:56:21] 00:1d:93:11:22:33: ### transmitted data using IV=112 (seq=113)
+[09:56:21] 00:1d:93:11:22:33: received 30 replies to the replayed broadcast ARP requests
+[09:56:21] 00:1d:93:11:22:33: Received 30 unique replies to replayed broadcast ARP requests. Client is vulnerable to group
+[09:56:21]                    key reinstallations in the group key handshake (or client accepts replayed broadcast frames)!
+wlan0: STA 00:1d:93:11:22:33 IEEE 802.11: authenticated
+wlan0: STA 00:1d:93:11:22:33 IEEE 802.11: associated (aid 1)
+wlan0: STA 00:1d:93:11:22:33 RADIUS: starting accounting session 3DE5325A53ABBB6E
+wlan0: STA 00:1d:93:11:22:33 WPA: pairwise key handshake completed (RSN)
+[09:56:28] 00:1d:93:11:22:33: ### transmitted data using IV=1 (seq=2)
+[09:56:29] 00:1d:93:11:22:33: ### transmitted data using IV=2 (seq=3)
+[09:56:29] 00:1d:93:11:22:33: ### transmitted data using IV=3 (seq=4)
+[09:56:29] 00:1d:93:11:22:33: ### transmitted data using IV=4 (seq=5)
+[09:56:29] 00:1d:93:11:22:33: ### transmitted data using IV=5 (seq=6)
+[09:56:29] 00:1d:93:11:22:33: ### transmitted data using IV=6 (seq=7)
+[09:56:29] 00:1d:93:11:22:33: ### transmitted data using IV=7 (seq=8)
+[09:56:29] 00:1d:93:11:22:33: ### transmitted data using IV=8 (seq=9)
+[09:56:34] 00:1d:93:11:22:33: ### transmitted data using IV=9 (seq=10)
+wlan0: STA 00:1d:93:11:22:33 WPA: group key handshake completed (RSN)
+[09:56:34] 00:1d:93:11:22:33: ### transmitted data using IV=10 (seq=11)
+[09:56:34] 00:1d:93:11:22:33: ### transmitted data using IV=11 (seq=12)
+[09:56:34] 00:1d:93:11:22:33: ### transmitted data using IV=12 (seq=13)
+[09:56:34] 00:1d:93:11:22:33: ### transmitted data using IV=13 (seq=14)
+[09:56:34] 00:1d:93:11:22:33: ### transmitted data using IV=14 (seq=15)
+[09:56:34] 00:1d:93:11:22:33: ### transmitted data using IV=15 (seq=16)
+^Cwlan0: interface state ENABLED->DISABLED
+wlan0: AP-STA-DISCONNECTED 00:1d:93:11:22:33
+Traceback (most recent call last):
+  File "./grouptest.py", line 617, in <module>
+wlan0: AP-DISABLED 
+

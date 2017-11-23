@@ -1,0 +1,229 @@
+root@sw1-ThinkPad-T61p:/home/sw1/KRACK_Test/krackattacks-scripts/krackattack# ./grouptest.py --tptk-rand --debug
+[10:37:13] Note: disable Wi-Fi in network manager & disable hardware encryption. Both may interfere with this script.
+[10:37:15] Starting hostapd ...
+Configuration file: /home/sw1/KRACK_Test/krackattacks-scripts/krackattack/hostapd.conf
+nl80211: Could not re-add multicast membership for vendor events: -2 (No such file or directory)
+Using interface wlan0 with hwaddr 90:9f:33:ec:7e:d0 and ssid "testnetwork"
+wlan0: interface state UNINITIALIZED->ENABLED
+wlan0: AP-ENABLED 
+[10:37:16] Ready. Connect to this Access Point to start the tests. Make sure the client requests an IP using DHCP!
+wlan0: STA 00:1d:93:11:22:33 IEEE 802.11: authenticated
+wlan0: STA 00:1d:93:11:22:33 IEEE 802.11: associated (aid 1)
+[10:37:32] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+wlan0: AP-STA-CONNECTED 00:1d:93:11:22:33
+wlan0: STA 00:1d:93:11:22:33 RADIUS: starting accounting session 8284DE135284C252
+[10:37:32] 00:1d:93:11:22:33: ### transmitted data using IV=1 (seq=2)
+[10:37:32] 00:1d:93:11:22:33: ### transmitted data using IV=2 (seq=3)
+[10:37:32] 00:1d:93:11:22:33: ### transmitted data using IV=3 (seq=4)
+[10:37:33] 00:1d:93:11:22:33: ### transmitted data using IV=4 (seq=5)
+[10:37:34] 00:1d:93:11:22:33: Hostapd: already installing pairwise key
+[10:37:34] 00:1d:93:11:22:33: Hostapd: Injecting Msg1 (with random ANonce) before Msg3 to test TPTK construction attack
+[10:37:34] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[10:37:36] 00:1d:93:11:22:33: Hostapd: Injecting Msg1 (with random ANonce) before Msg3 to test TPTK construction attack
+[10:37:36] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[10:37:37] 00:1d:93:11:22:33: ### transmitted data using IV=5 (seq=6)
+[10:37:37] 00:1d:93:11:22:33: ### transmitted data using IV=6 (seq=7)
+[10:37:37] 00:1d:93:11:22:33: no pairwise IV resets seem to have occured for one interval
+[10:37:37] 00:1d:93:11:22:33: ### transmitted data using IV=6 (seq=7)
+[10:37:38] 00:1d:93:11:22:33: Hostapd: Injecting Msg1 (with random ANonce) before Msg3 to test TPTK construction attack
+[10:37:38] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[10:37:40] 00:1d:93:11:22:33: Hostapd: Injecting Msg1 (with random ANonce) before Msg3 to test TPTK construction attack
+[10:37:40] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[10:37:41] 00:1d:93:11:22:33: ### transmitted data using IV=8 (seq=9)
+[10:37:42] 00:1d:93:11:22:33: Hostapd: Injecting Msg1 (with random ANonce) before Msg3 to test TPTK construction attack
+[10:37:42] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[10:37:42] 00:1d:93:11:22:33: DHCP reply 192.168.100.2 to 00:1d:93:11:22:33
+[10:37:42] 00:1d:93:11:22:33: ### transmitted data using IV=9 (seq=10)
+[10:37:42] 00:1d:93:11:22:33: no pairwise IV resets seem to have occured for one interval
+[10:37:43] 00:1d:93:11:22:33: ### transmitted data using IV=10 (seq=11)
+[10:37:43] 00:1d:93:11:22:33: DHCP reply 192.168.100.2 to 00:1d:93:11:22:33
+[10:37:43] 00:1d:93:11:22:33: client has IP address -> testing for group key reinstallation in the 4-way handshake
+[10:37:43] 00:1d:93:11:22:33: sent 1 broadcasts ARPs this interval
+[10:37:43] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[10:37:43] 00:1d:93:11:22:33: ### transmitted data using IV=11 (seq=12)
+[10:37:43] 00:1d:93:11:22:33: ### transmitted data using IV=12 (seq=13)
+[10:37:43] 00:1d:93:11:22:33: ### transmitted data using IV=13 (seq=14)
+[10:37:43] 00:1d:93:11:22:33: ### transmitted data using IV=14 (seq=15)
+[10:37:43] 00:1d:93:11:22:33: ### transmitted data using IV=15 (seq=16)
+[10:37:43] 00:1d:93:11:22:33: ### transmitted data using IV=16 (seq=17)
+[10:37:43] 00:1d:93:11:22:33: ### transmitted data using IV=17 (seq=18)
+[10:37:43] 00:1d:93:11:22:33: ### transmitted data using IV=18 (seq=19)
+[10:37:43] 00:1d:93:11:22:33: ### transmitted data using IV=19 (seq=20)
+[10:37:43] 00:1d:93:11:22:33: ### transmitted data using IV=20 (seq=21)
+[10:37:44] 00:1d:93:11:22:33: ### transmitted data using IV=21 (seq=22)
+[10:37:44] 00:1d:93:11:22:33: ### transmitted data using IV=22 (seq=23)
+[10:37:44] 00:1d:93:11:22:33: Hostapd: Injecting Msg1 (with random ANonce) before Msg3 to test TPTK construction attack
+[10:37:44] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[10:37:45] 00:1d:93:11:22:33: sent 2 broadcasts ARPs this interval
+[10:37:45] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[10:37:45] 00:1d:93:11:22:33: ### transmitted data using IV=23 (seq=24)
+[10:37:45] 00:1d:93:11:22:33: received 1 replies to the replayed broadcast ARP requests
+[10:37:45] 00:1d:93:11:22:33: ### transmitted data using IV=23 (seq=24)
+[10:37:45] 00:1d:93:11:22:33: ### transmitted data using IV=23 (seq=24)
+[10:37:46] 00:1d:93:11:22:33: ### transmitted data using IV=24 (seq=25)
+[10:37:46] 00:1d:93:11:22:33: ### transmitted data using IV=25 (seq=26)
+[10:37:46] 00:1d:93:11:22:33: ### transmitted data using IV=25 (seq=26)
+[10:37:46] 00:1d:93:11:22:33: ### transmitted data using IV=25 (seq=26)
+[10:37:46] 00:1d:93:11:22:33: Hostapd: Injecting Msg1 (with random ANonce) before Msg3 to test TPTK construction attack
+[10:37:46] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[10:37:47] 00:1d:93:11:22:33: sent 3 broadcasts ARPs this interval
+[10:37:47] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[10:37:47] 00:1d:93:11:22:33: received 2 replies to the replayed broadcast ARP requests
+[10:37:47] 00:1d:93:11:22:33: ### transmitted data using IV=26 (seq=27)
+[10:37:48] 00:1d:93:11:22:33: ### transmitted data using IV=27 (seq=28)
+[10:37:48] 00:1d:93:11:22:33: no pairwise IV resets seem to have occured for one interval
+[10:37:48] 00:1d:93:11:22:33: ### transmitted data using IV=28 (seq=29)
+[10:37:48] 00:1d:93:11:22:33: ### transmitted data using IV=29 (seq=30)
+[10:37:48] 00:1d:93:11:22:33: ### transmitted data using IV=30 (seq=31)
+[10:37:48] 00:1d:93:11:22:33: ### transmitted data using IV=31 (seq=32)
+[10:37:48] 00:1d:93:11:22:33: ### transmitted data using IV=32 (seq=33)
+[10:37:48] 00:1d:93:11:22:33: Hostapd: Injecting Msg1 (with random ANonce) before Msg3 to test TPTK construction attack
+[10:37:48] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[10:37:49] 00:1d:93:11:22:33: sent 4 broadcasts ARPs this interval
+[10:37:49] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[10:37:49] 00:1d:93:11:22:33: received 3 replies to the replayed broadcast ARP requests
+[10:37:49] 00:1d:93:11:22:33: ### transmitted data using IV=33 (seq=34)
+[10:37:49] 00:1d:93:11:22:33: ### transmitted data using IV=34 (seq=35)
+[10:37:49] 00:1d:93:11:22:33: ### transmitted data using IV=35 (seq=36)
+[10:37:50] 00:1d:93:11:22:33: Hostapd: Injecting Msg1 (with random ANonce) before Msg3 to test TPTK construction attack
+[10:37:50] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[10:37:51] 00:1d:93:11:22:33: got a reply to broadcast ARP during this interval
+[10:37:51] 00:1d:93:11:22:33: sent 1 broadcasts ARPs this interval
+[10:37:51] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[10:37:52] 00:1d:93:11:22:33: Hostapd: Injecting Msg1 (with random ANonce) before Msg3 to test TPTK construction attack
+[10:37:52] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[10:37:53] 00:1d:93:11:22:33: sent 2 broadcasts ARPs this interval
+[10:37:53] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[10:37:53] 00:1d:93:11:22:33: ### transmitted data using IV=40 (seq=41)
+[10:37:53] 00:1d:93:11:22:33: no pairwise IV resets seem to have occured for one interval
+[10:37:53] 00:1d:93:11:22:33: ### transmitted data using IV=41 (seq=42)
+[10:37:53] 00:1d:93:11:22:33: ### transmitted data using IV=42 (seq=43)
+[10:37:54] 00:1d:93:11:22:33: Hostapd: Injecting Msg1 (with random ANonce) before Msg3 to test TPTK construction attack
+[10:37:54] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[10:37:55] 00:1d:93:11:22:33: sent 3 broadcasts ARPs this interval
+[10:37:55] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[10:37:55] 00:1d:93:11:22:33: ### transmitted data using IV=43 (seq=44)
+[10:37:55] 00:1d:93:11:22:33: received 4 replies to the replayed broadcast ARP requests
+[10:37:56] 00:1d:93:11:22:33: Hostapd: Injecting Msg1 (with random ANonce) before Msg3 to test TPTK construction attack
+[10:37:56] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[10:37:57] 00:1d:93:11:22:33: sent 4 broadcasts ARPs this interval
+[10:37:57] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[10:37:58] 00:1d:93:11:22:33: ### transmitted data using IV=44 (seq=45)
+[10:37:58] 00:1d:93:11:22:33: ### transmitted data using IV=45 (seq=46)
+[10:37:58] 00:1d:93:11:22:33: ### transmitted data using IV=45 (seq=46)
+[10:37:58] 00:1d:93:11:22:33: ### transmitted data using IV=46 (seq=47)
+[10:37:58] 00:1d:93:11:22:33: no pairwise IV resets seem to have occured for one interval
+[10:37:58] 00:1d:93:11:22:33: client DOESN'T seem vulnerable to pairwise key reinstallation in the 4-way handshake (using TPTK-RAND attack).
+[10:37:58] 00:1d:93:11:22:33: ### transmitted data using IV=47 (seq=48)
+[10:37:58] 00:1d:93:11:22:33: Hostapd: Injecting Msg1 (with random ANonce) before Msg3 to test TPTK construction attack
+[10:37:58] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[10:37:59] 00:1d:93:11:22:33: got a reply to broadcast ARP during this interval
+[10:37:59] 00:1d:93:11:22:33: sent 1 broadcasts ARPs this interval
+[10:37:59] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[10:37:59] 00:1d:93:11:22:33: ### transmitted data using IV=48 (seq=49)
+[10:38:00] 00:1d:93:11:22:33: Hostapd: Injecting Msg1 (with random ANonce) before Msg3 to test TPTK construction attack
+[10:38:00] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[10:38:01] 00:1d:93:11:22:33: sent 2 broadcasts ARPs this interval
+[10:38:01] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[10:38:01] 00:1d:93:11:22:33: received 5 replies to the replayed broadcast ARP requests
+[10:38:01] 00:1d:93:11:22:33: ### transmitted data using IV=49 (seq=50)
+[10:38:02] 00:1d:93:11:22:33: Hostapd: Injecting Msg1 (with random ANonce) before Msg3 to test TPTK construction attack
+[10:38:02] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[10:38:03] 00:1d:93:11:22:33: sent 3 broadcasts ARPs this interval
+[10:38:03] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[10:38:03] 00:1d:93:11:22:33: received 6 replies to the replayed broadcast ARP requests
+[10:38:03] 00:1d:93:11:22:33: ### transmitted data using IV=50 (seq=51)
+[10:38:03] 00:1d:93:11:22:33: ### transmitted data using IV=51 (seq=52)
+[10:38:03] 00:1d:93:11:22:33: ### transmitted data using IV=52 (seq=53)
+[10:38:04] 00:1d:93:11:22:33: ### transmitted data using IV=53 (seq=54)
+[10:38:04] 00:1d:93:11:22:33: ### transmitted data using IV=54 (seq=55)
+[10:38:04] 00:1d:93:11:22:33: ### transmitted data using IV=55 (seq=56)
+[10:38:04] 00:1d:93:11:22:33: ### transmitted data using IV=56 (seq=57)
+[10:38:04] 00:1d:93:11:22:33: ### transmitted data using IV=57 (seq=58)
+[10:38:04] 00:1d:93:11:22:33: Hostapd: Injecting Msg1 (with random ANonce) before Msg3 to test TPTK construction attack
+[10:38:04] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[10:38:05] 00:1d:93:11:22:33: sent 4 broadcasts ARPs this interval
+[10:38:05] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[10:38:06] 00:1d:93:11:22:33: Hostapd: Injecting Msg1 (with random ANonce) before Msg3 to test TPTK construction attack
+[10:38:06] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[10:38:07] 00:1d:93:11:22:33: got a reply to broadcast ARP during this interval
+[10:38:07] 00:1d:93:11:22:33: sent 1 broadcasts ARPs this interval
+[10:38:07] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[10:38:08] 00:1d:93:11:22:33: ### transmitted data using IV=58 (seq=59)
+[10:38:08] 00:1d:93:11:22:33: Hostapd: Injecting Msg1 (with random ANonce) before Msg3 to test TPTK construction attack
+[10:38:08] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[10:38:09] 00:1d:93:11:22:33: sent 2 broadcasts ARPs this interval
+[10:38:09] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[10:38:09] 00:1d:93:11:22:33: ### transmitted data using IV=59 (seq=60)
+[10:38:09] 00:1d:93:11:22:33: ### transmitted data using IV=59 (seq=60)
+[10:38:09] 00:1d:93:11:22:33: ### transmitted data using IV=59 (seq=60)
+[10:38:09] 00:1d:93:11:22:33: ### transmitted data using IV=60 (seq=61)
+[10:38:09] 00:1d:93:11:22:33: ### transmitted data using IV=61 (seq=62)
+[10:38:09] 00:1d:93:11:22:33: ### transmitted data using IV=62 (seq=63)
+[10:38:09] 00:1d:93:11:22:33: ### transmitted data using IV=63 (seq=64)
+[10:38:09] 00:1d:93:11:22:33: ### transmitted data using IV=64 (seq=65)
+[10:38:09] 00:1d:93:11:22:33: ### transmitted data using IV=64 (seq=65)
+[10:38:10] 00:1d:93:11:22:33: Hostapd: Injecting Msg1 (with random ANonce) before Msg3 to test TPTK construction attack
+[10:38:10] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[10:38:11] 00:1d:93:11:22:33: sent 3 broadcasts ARPs this interval
+[10:38:11] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[10:38:11] 00:1d:93:11:22:33: ### transmitted data using IV=65 (seq=66)
+[10:38:11] 00:1d:93:11:22:33: received 7 replies to the replayed broadcast ARP requests
+[10:38:11] 00:1d:93:11:22:33: ### transmitted data using IV=66 (seq=67)
+[10:38:12] 00:1d:93:11:22:33: Hostapd: Injecting Msg1 (with random ANonce) before Msg3 to test TPTK construction attack
+[10:38:12] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[10:38:13] 00:1d:93:11:22:33: sent 4 broadcasts ARPs this interval
+[10:38:13] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[10:38:13] 00:1d:93:11:22:33: received 8 replies to the replayed broadcast ARP requests
+[10:38:13] 00:1d:93:11:22:33: ### transmitted data using IV=67 (seq=68)
+[10:38:14] 00:1d:93:11:22:33: Hostapd: Injecting Msg1 (with random ANonce) before Msg3 to test TPTK construction attack
+[10:38:14] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[10:38:15] 00:1d:93:11:22:33: got a reply to broadcast ARP during this interval
+[10:38:15] 00:1d:93:11:22:33: sent 1 broadcasts ARPs this interval
+[10:38:15] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[10:38:15] 00:1d:93:11:22:33: ### transmitted data using IV=68 (seq=69)
+[10:38:15] 00:1d:93:11:22:33: received 9 replies to the replayed broadcast ARP requests
+[10:38:16] 00:1d:93:11:22:33: ### transmitted data using IV=69 (seq=70)
+[10:38:16] 00:1d:93:11:22:33: ### transmitted data using IV=69 (seq=70)
+[10:38:16] 00:1d:93:11:22:33: Hostapd: Injecting Msg1 (with random ANonce) before Msg3 to test TPTK construction attack
+[10:38:16] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[10:38:17] 00:1d:93:11:22:33: sent 2 broadcasts ARPs this interval
+[10:38:17] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[10:38:18] 00:1d:93:11:22:33: Hostapd: Injecting Msg1 (with random ANonce) before Msg3 to test TPTK construction attack
+[10:38:18] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[10:38:19] 00:1d:93:11:22:33: sent 3 broadcasts ARPs this interval
+[10:38:19] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[10:38:19] 00:1d:93:11:22:33: ### transmitted data using IV=70 (seq=71)
+[10:38:19] 00:1d:93:11:22:33: received 10 replies to the replayed broadcast ARP requests
+[10:38:19] 00:1d:93:11:22:33: Received 10 unique replies to replayed broadcast ARP requests. Client is vulnerable to group
+[10:38:19]                    key reinstallations in the 4-way handshake (or client accepts replayed broadcast frames)!
+[10:38:20] 00:1d:93:11:22:33: Hostapd: Injecting Msg1 (with random ANonce) before Msg3 to test TPTK construction attack
+[10:38:20] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[10:38:21] 00:1d:93:11:22:33: ### transmitted data using IV=71 (seq=72)
+[10:38:21] 00:1d:93:11:22:33: ### transmitted data using IV=71 (seq=72)
+[10:38:21] 00:1d:93:11:22:33: ### transmitted data using IV=72 (seq=73)
+[10:38:21] 00:1d:93:11:22:33: ### transmitted data using IV=73 (seq=74)
+[10:38:21] 00:1d:93:11:22:33: ### transmitted data using IV=73 (seq=74)
+[10:38:21] 00:1d:93:11:22:33: ### transmitted data using IV=74 (seq=75)
+[10:38:22] 00:1d:93:11:22:33: Hostapd: Injecting Msg1 (with random ANonce) before Msg3 to test TPTK construction attack
+[10:38:22] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[10:38:24] 00:1d:93:11:22:33: Hostapd: Injecting Msg1 (with random ANonce) before Msg3 to test TPTK construction attack
+[10:38:24] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[10:38:26] 00:1d:93:11:22:33: ### transmitted data using IV=75 (seq=76)
+[10:38:26] 00:1d:93:11:22:33: ### transmitted data using IV=75 (seq=76)
+[10:38:26] 00:1d:93:11:22:33: ### transmitted data using IV=75 (seq=76)
+[10:38:26] 00:1d:93:11:22:33: ### transmitted data using IV=76 (seq=77)
+[10:38:26] 00:1d:93:11:22:33: Hostapd: Injecting Msg1 (with random ANonce) before Msg3 to test TPTK construction attack
+[10:38:26] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[10:38:28] 00:1d:93:11:22:33: Hostapd: Injecting Msg1 (with random ANonce) before Msg3 to test TPTK construction attack
+[10:38:28] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+^Cwlan0: interface state ENABLED->DISABLED
+Traceback (most recent call last):
+  File "./grouptest.py", line 617, in <module>
+wlan0: AP-STA-DISCONNECTED 00:1d:93:11:22:33
+    attack.run(test_grouphs=test_grouphs, test_tptk=test_tptk)
+  File "./grouptest.py", line 529, in run
+    sel = select.select([self.sock_mon, self.sock_eth], [], [], 1)
+KeyboardInterrupt
+wlan0: AP-DISABLED 
+

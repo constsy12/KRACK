@@ -1,0 +1,289 @@
+root@sw1-ThinkPad-T61p:/home/sw1/KRACK_Test/krackattacks-scripts/krackattack# ./grouptest.py --debug
+[09:36:12] Note: disable Wi-Fi in network manager & disable hardware encryption. Both may interfere with this script.
+[09:36:13] Starting hostapd ...
+Configuration file: /home/sw1/KRACK_Test/krackattacks-scripts/krackattack/hostapd.conf
+nl80211: Could not re-add multicast membership for vendor events: -2 (No such file or directory)
+Using interface wlan0 with hwaddr 90:9f:33:ec:7e:d0 and ssid "testnetwork"
+wlan0: interface state UNINITIALIZED->ENABLED
+wlan0: AP-ENABLED 
+[09:36:14] Ready. Connect to this Access Point to start the tests. Make sure the client requests an IP using DHCP!
+wlan0: STA 00:1d:93:11:22:33 IEEE 802.11: authenticated
+wlan0: STA 00:1d:93:11:22:33 IEEE 802.11: associated (aid 1)
+[09:36:36] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+wlan0: AP-STA-CONNECTED 00:1d:93:11:22:33
+wlan0: STA 00:1d:93:11:22:33 RADIUS: starting accounting session 7FE33396924D359A
+[09:36:36] 00:1d:93:11:22:33: ### transmitted data using IV=1 (seq=2)
+[09:36:36] 00:1d:93:11:22:33: ### transmitted data using IV=2 (seq=3)
+[09:36:36] 00:1d:93:11:22:33: ### transmitted data using IV=3 (seq=4)
+[09:36:37] 00:1d:93:11:22:33: ### transmitted data using IV=4 (seq=5)
+[09:36:38] 00:1d:93:11:22:33: Hostapd: already installing pairwise key
+[09:36:38] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[09:36:38] 00:1d:93:11:22:33: ### transmitted data using IV=5 (seq=6)
+[09:36:40] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[09:36:40] 00:1d:93:11:22:33: ### transmitted data using IV=6 (seq=7)
+[09:36:41] 00:1d:93:11:22:33: ### transmitted data using IV=7 (seq=8)
+[09:36:41] 00:1d:93:11:22:33: no pairwise IV resets seem to have occured for one interval
+[09:36:41] 00:1d:93:11:22:33: ### transmitted data using IV=8 (seq=9)
+[09:36:41] 00:1d:93:11:22:33: DHCP reply 192.168.100.2 to 00:1d:93:11:22:33
+[09:36:41] 00:1d:93:11:22:33: ### transmitted data using IV=9 (seq=10)
+[09:36:41] 00:1d:93:11:22:33: DHCP reply 192.168.100.2 to 00:1d:93:11:22:33
+[09:36:42] 00:1d:93:11:22:33: ### transmitted data using IV=10 (seq=11)
+[09:36:42] 00:1d:93:11:22:33: ### transmitted data using IV=11 (seq=12)
+[09:36:42] 00:1d:93:11:22:33: ### transmitted data using IV=12 (seq=13)
+[09:36:42] 00:1d:93:11:22:33: ### transmitted data using IV=13 (seq=14)
+[09:36:42] 00:1d:93:11:22:33: ### transmitted data using IV=14 (seq=15)
+[09:36:42] 00:1d:93:11:22:33: ### transmitted data using IV=15 (seq=16)
+[09:36:42] 00:1d:93:11:22:33: ### transmitted data using IV=16 (seq=17)
+[09:36:42] 00:1d:93:11:22:33: ### transmitted data using IV=17 (seq=18)
+[09:36:42] 00:1d:93:11:22:33: ### transmitted data using IV=18 (seq=19)
+[09:36:42] 00:1d:93:11:22:33: ### transmitted data using IV=19 (seq=20)
+[09:36:42] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[09:36:43] 00:1d:93:11:22:33: ### transmitted data using IV=20 (seq=21)
+[09:36:43] 00:1d:93:11:22:33: ### transmitted data using IV=21 (seq=22)
+[09:36:43] 00:1d:93:11:22:33: ### transmitted data using IV=22 (seq=23)
+[09:36:43] 00:1d:93:11:22:33: ### transmitted data using IV=23 (seq=24)
+[09:36:43] 00:1d:93:11:22:33: client has IP address -> testing for group key reinstallation in the 4-way handshake
+[09:36:43] 00:1d:93:11:22:33: sent 1 broadcasts ARPs this interval
+[09:36:43] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[09:36:44] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[09:36:44] 00:1d:93:11:22:33: ### transmitted data using IV=24 (seq=25)
+[09:36:44] 00:1d:93:11:22:33: ### transmitted data using IV=25 (seq=26)
+[09:36:44] 00:1d:93:11:22:33: ### transmitted data using IV=26 (seq=27)
+[09:36:45] 00:1d:93:11:22:33: ### transmitted data using IV=27 (seq=28)
+[09:36:45] 00:1d:93:11:22:33: ### transmitted data using IV=28 (seq=29)
+[09:36:45] 00:1d:93:11:22:33: sent 2 broadcasts ARPs this interval
+[09:36:45] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[09:36:45] 00:1d:93:11:22:33: ### transmitted data using IV=29 (seq=30)
+[09:36:46] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[09:36:47] 00:1d:93:11:22:33: ### transmitted data using IV=30 (seq=31)
+[09:36:47] 00:1d:93:11:22:33: no pairwise IV resets seem to have occured for one interval
+[09:36:47] 00:1d:93:11:22:33: ### transmitted data using IV=31 (seq=32)
+[09:36:47] 00:1d:93:11:22:33: ### transmitted data using IV=32 (seq=33)
+[09:36:47] 00:1d:93:11:22:33: ### transmitted data using IV=33 (seq=34)
+[09:36:47] 00:1d:93:11:22:33: ### transmitted data using IV=34 (seq=35)
+[09:36:47] 00:1d:93:11:22:33: ### transmitted data using IV=35 (seq=36)
+[09:36:47] 00:1d:93:11:22:33: ### transmitted data using IV=36 (seq=37)
+[09:36:47] 00:1d:93:11:22:33: ### transmitted data using IV=37 (seq=38)
+[09:36:47] 00:1d:93:11:22:33: sent 3 broadcasts ARPs this interval
+[09:36:47] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[09:36:47] 00:1d:93:11:22:33: received 1 replies to the replayed broadcast ARP requests
+[09:36:47] 00:1d:93:11:22:33: ### transmitted data using IV=38 (seq=39)
+[09:36:48] 00:1d:93:11:22:33: ### transmitted data using IV=39 (seq=40)
+[09:36:48] 00:1d:93:11:22:33: ### transmitted data using IV=40 (seq=41)
+[09:36:48] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[09:36:49] 00:1d:93:11:22:33: sent 4 broadcasts ARPs this interval
+[09:36:49] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[09:36:50] 00:1d:93:11:22:33: ### transmitted data using IV=41 (seq=42)
+[09:36:50] 00:1d:93:11:22:33: ### transmitted data using IV=42 (seq=43)
+[09:36:50] 00:1d:93:11:22:33: ### transmitted data using IV=43 (seq=44)
+[09:36:50] 00:1d:93:11:22:33: ### transmitted data using IV=44 (seq=45)
+[09:36:50] 00:1d:93:11:22:33: ### transmitted data using IV=44 (seq=45)
+[09:36:50] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[09:36:51] 00:1d:93:11:22:33: ### transmitted data using IV=45 (seq=46)
+[09:36:51] 00:1d:93:11:22:33: ### transmitted data using IV=46 (seq=47)
+[09:36:51] 00:1d:93:11:22:33: ### transmitted data using IV=47 (seq=48)
+[09:36:51] 00:1d:93:11:22:33: got a reply to broadcast ARP during this interval
+[09:36:51] 00:1d:93:11:22:33: sent 1 broadcasts ARPs this interval
+[09:36:51] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[09:36:51] 00:1d:93:11:22:33: ### transmitted data using IV=48 (seq=49)
+[09:36:51] 00:1d:93:11:22:33: received 2 replies to the replayed broadcast ARP requests
+[09:36:52] 00:1d:93:11:22:33: ### transmitted data using IV=49 (seq=50)
+[09:36:52] 00:1d:93:11:22:33: no pairwise IV resets seem to have occured for one interval
+[09:36:52] 00:1d:93:11:22:33: ### transmitted data using IV=50 (seq=51)
+[09:36:52] 00:1d:93:11:22:33: ### transmitted data using IV=51 (seq=52)
+[09:36:52] 00:1d:93:11:22:33: ### transmitted data using IV=52 (seq=53)
+[09:36:52] 00:1d:93:11:22:33: ### transmitted data using IV=53 (seq=54)
+[09:36:52] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[09:36:53] 00:1d:93:11:22:33: sent 2 broadcasts ARPs this interval
+[09:36:53] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[09:36:53] 00:1d:93:11:22:33: received 3 replies to the replayed broadcast ARP requests
+[09:36:53] 00:1d:93:11:22:33: ### transmitted data using IV=54 (seq=55)
+[09:36:53] 00:1d:93:11:22:33: ### transmitted data using IV=55 (seq=56)
+[09:36:53] 00:1d:93:11:22:33: ### transmitted data using IV=56 (seq=57)
+[09:36:54] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[09:36:55] 00:1d:93:11:22:33: sent 3 broadcasts ARPs this interval
+[09:36:55] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[09:36:55] 00:1d:93:11:22:33: ### transmitted data using IV=57 (seq=58)
+[09:36:55] 00:1d:93:11:22:33: received 4 replies to the replayed broadcast ARP requests
+[09:36:56] 00:1d:93:11:22:33: ### transmitted data using IV=58 (seq=59)
+[09:36:56] 00:1d:93:11:22:33: ### transmitted data using IV=59 (seq=60)
+[09:36:56] 00:1d:93:11:22:33: ### transmitted data using IV=60 (seq=61)
+[09:36:56] 00:1d:93:11:22:33: ### transmitted data using IV=61 (seq=62)
+[09:36:56] 00:1d:93:11:22:33: ### transmitted data using IV=62 (seq=63)
+[09:36:56] 00:1d:93:11:22:33: ### transmitted data using IV=63 (seq=64)
+[09:36:56] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[09:36:57] 00:1d:93:11:22:33: ### transmitted data using IV=64 (seq=65)
+[09:36:57] 00:1d:93:11:22:33: no pairwise IV resets seem to have occured for one interval
+[09:36:57] 00:1d:93:11:22:33: ### transmitted data using IV=65 (seq=66)
+[09:36:57] 00:1d:93:11:22:33: ### transmitted data using IV=66 (seq=67)
+[09:36:57] 00:1d:93:11:22:33: ### transmitted data using IV=67 (seq=68)
+[09:36:57] 00:1d:93:11:22:33: sent 4 broadcasts ARPs this interval
+[09:36:57] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[09:36:57] 00:1d:93:11:22:33: received 5 replies to the replayed broadcast ARP requests
+[09:36:57] 00:1d:93:11:22:33: ### transmitted data using IV=68 (seq=69)
+[09:36:58] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[09:36:59] 00:1d:93:11:22:33: got a reply to broadcast ARP during this interval
+[09:36:59] 00:1d:93:11:22:33: sent 1 broadcasts ARPs this interval
+[09:36:59] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[09:36:59] 00:1d:93:11:22:33: ### transmitted data using IV=69 (seq=70)
+[09:36:59] 00:1d:93:11:22:33: received 6 replies to the replayed broadcast ARP requests
+[09:36:59] 00:1d:93:11:22:33: ### transmitted data using IV=70 (seq=71)
+[09:36:59] 00:1d:93:11:22:33: ### transmitted data using IV=71 (seq=72)
+[09:37:00] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[09:37:01] 00:1d:93:11:22:33: ### transmitted data using IV=72 (seq=73)
+[09:37:01] 00:1d:93:11:22:33: ### transmitted data using IV=73 (seq=74)
+[09:37:01] 00:1d:93:11:22:33: ### transmitted data using IV=74 (seq=75)
+[09:37:01] 00:1d:93:11:22:33: ### transmitted data using IV=74 (seq=75)
+[09:37:01] 00:1d:93:11:22:33: ### transmitted data using IV=75 (seq=76)
+[09:37:01] 00:1d:93:11:22:33: ### transmitted data using IV=76 (seq=77)
+[09:37:01] 00:1d:93:11:22:33: ### transmitted data using IV=77 (seq=78)
+[09:37:01] 00:1d:93:11:22:33: ### transmitted data using IV=78 (seq=79)
+[09:37:01] 00:1d:93:11:22:33: ### transmitted data using IV=79 (seq=80)
+[09:37:01] 00:1d:93:11:22:33: sent 2 broadcasts ARPs this interval
+[09:37:01] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[09:37:01] 00:1d:93:11:22:33: ### transmitted data using IV=80 (seq=81)
+[09:37:01] 00:1d:93:11:22:33: received 7 replies to the replayed broadcast ARP requests
+[09:37:02] 00:1d:93:11:22:33: ### transmitted data using IV=81 (seq=82)
+[09:37:02] 00:1d:93:11:22:33: no pairwise IV resets seem to have occured for one interval
+[09:37:02] 00:1d:93:11:22:33: client DOESN'T seem vulnerable to pairwise key reinstallation in the 4-way handshake (using standard attack).
+[09:37:02] 00:1d:93:11:22:33: ### transmitted data using IV=82 (seq=83)
+[09:37:02] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[09:37:03] 00:1d:93:11:22:33: sent 3 broadcasts ARPs this interval
+[09:37:03] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[09:37:04] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[09:37:05] 00:1d:93:11:22:33: sent 4 broadcasts ARPs this interval
+[09:37:05] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[09:37:05] 00:1d:93:11:22:33: ### transmitted data using IV=83 (seq=84)
+[09:37:05] 00:1d:93:11:22:33: received 8 replies to the replayed broadcast ARP requests
+[09:37:05] 00:1d:93:11:22:33: ### transmitted data using IV=83 (seq=84)
+[09:37:05] 00:1d:93:11:22:33: ### transmitted data using IV=83 (seq=84)
+[09:37:05] 00:1d:93:11:22:33: ### transmitted data using IV=84 (seq=85)
+[09:37:05] 00:1d:93:11:22:33: ### transmitted data using IV=85 (seq=86)
+[09:37:05] 00:1d:93:11:22:33: ### transmitted data using IV=86 (seq=87)
+[09:37:06] 00:1d:93:11:22:33: ### transmitted data using IV=87 (seq=88)
+[09:37:06] 00:1d:93:11:22:33: ### transmitted data using IV=88 (seq=89)
+[09:37:06] 00:1d:93:11:22:33: ### transmitted data using IV=89 (seq=90)
+[09:37:06] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[09:37:07] 00:1d:93:11:22:33: got a reply to broadcast ARP during this interval
+[09:37:07] 00:1d:93:11:22:33: sent 1 broadcasts ARPs this interval
+[09:37:07] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[09:37:08] 00:1d:93:11:22:33: ### transmitted data using IV=90 (seq=91)
+[09:37:08] 00:1d:93:11:22:33: ### transmitted data using IV=91 (seq=92)
+[09:37:08] 00:1d:93:11:22:33: ### transmitted data using IV=92 (seq=93)
+[09:37:08] 00:1d:93:11:22:33: ### transmitted data using IV=93 (seq=94)
+[09:37:08] 00:1d:93:11:22:33: ### transmitted data using IV=94 (seq=95)
+[09:37:08] 00:1d:93:11:22:33: ### transmitted data using IV=95 (seq=96)
+[09:37:08] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[09:37:09] 00:1d:93:11:22:33: sent 2 broadcasts ARPs this interval
+[09:37:09] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[09:37:10] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[09:37:11] 00:1d:93:11:22:33: sent 3 broadcasts ARPs this interval
+[09:37:11] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[09:37:11] 00:1d:93:11:22:33: received 9 replies to the replayed broadcast ARP requests
+[09:37:11] 00:1d:93:11:22:33: ### transmitted data using IV=96 (seq=97)
+[09:37:11] 00:1d:93:11:22:33: ### transmitted data using IV=97 (seq=98)
+[09:37:11] 00:1d:93:11:22:33: ### transmitted data using IV=98 (seq=99)
+[09:37:11] 00:1d:93:11:22:33: ### transmitted data using IV=99 (seq=100)
+[09:37:11] 00:1d:93:11:22:33: ### transmitted data using IV=100 (seq=101)
+[09:37:12] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[09:37:13] 00:1d:93:11:22:33: ### transmitted data using IV=101 (seq=102)
+[09:37:13] 00:1d:93:11:22:33: ### transmitted data using IV=102 (seq=103)
+[09:37:13] 00:1d:93:11:22:33: ### transmitted data using IV=103 (seq=104)
+[09:37:13] 00:1d:93:11:22:33: ### transmitted data using IV=104 (seq=105)
+[09:37:13] 00:1d:93:11:22:33: ### transmitted data using IV=105 (seq=106)
+[09:37:13] 00:1d:93:11:22:33: ### transmitted data using IV=106 (seq=107)
+[09:37:13] 00:1d:93:11:22:33: sent 4 broadcasts ARPs this interval
+[09:37:13] 00:1d:93:11:22:33: sending broadcast ARP to 192.168.100.2 from 192.168.100.1
+[09:37:13] 00:1d:93:11:22:33: received 10 replies to the replayed broadcast ARP requests
+[09:37:13] 00:1d:93:11:22:33: Received 10 unique replies to replayed broadcast ARP requests. Client is vulnerable to group
+[09:37:13]                    key reinstallations in the 4-way handshake (or client accepts replayed broadcast frames)!
+[09:37:13] 00:1d:93:11:22:33: ### transmitted data using IV=107 (seq=108)
+[09:37:13] 00:1d:93:11:22:33: ### transmitted data using IV=107 (seq=108)
+[09:37:14] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[09:37:16] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[09:37:17] 00:1d:93:11:22:33: ### transmitted data using IV=108 (seq=109)
+[09:37:17] 00:1d:93:11:22:33: ### transmitted data using IV=109 (seq=110)
+[09:37:17] 00:1d:93:11:22:33: ### transmitted data using IV=110 (seq=111)
+[09:37:17] 00:1d:93:11:22:33: ### transmitted data using IV=111 (seq=112)
+[09:37:17] 00:1d:93:11:22:33: ### transmitted data using IV=112 (seq=113)
+[09:37:18] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[09:37:20] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[09:37:22] 00:1d:93:11:22:33: ### transmitted data using IV=113 (seq=114)
+[09:37:22] 00:1d:93:11:22:33: ### transmitted data using IV=114 (seq=115)
+[09:37:22] 00:1d:93:11:22:33: ### transmitted data using IV=115 (seq=116)
+[09:37:22] 00:1d:93:11:22:33: ### transmitted data using IV=116 (seq=117)
+[09:37:22] 00:1d:93:11:22:33: ### transmitted data using IV=117 (seq=118)
+[09:37:22] 00:1d:93:11:22:33: ### transmitted data using IV=118 (seq=119)
+[09:37:22] 00:1d:93:11:22:33: ### transmitted data using IV=119 (seq=120)
+[09:37:22] 00:1d:93:11:22:33: ### transmitted data using IV=120 (seq=121)
+[09:37:22] 00:1d:93:11:22:33: ### transmitted data using IV=121 (seq=122)
+[09:37:22] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[09:37:24] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[09:37:26] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[09:37:28] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+wlan0: STA 00:1d:93:11:22:33 IEEE 802.11: authenticated
+wlan0: STA 00:1d:93:11:22:33 IEEE 802.11: associated (aid 1)
+[09:37:29] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[09:37:29] 00:1d:93:11:22:33: ### transmitted data using IV=1 (seq=2)
+[09:37:29] 00:1d:93:11:22:33: ### transmitted data using IV=2 (seq=3)
+[09:37:30] 00:1d:93:11:22:33: ### transmitted data using IV=3 (seq=4)
+[09:37:30] 00:1d:93:11:22:33: ### transmitted data using IV=4 (seq=5)
+[09:37:31] 00:1d:93:11:22:33: Hostapd: already installing pairwise key
+[09:37:31] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[09:37:31] 00:1d:93:11:22:33: ### transmitted data using IV=5 (seq=6)
+[09:37:31] 00:1d:93:11:22:33: ### transmitted data using IV=6 (seq=7)
+[09:37:31] 00:1d:93:11:22:33: ### transmitted data using IV=7 (seq=8)
+[09:37:33] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[09:37:34] 00:1d:93:11:22:33: ### transmitted data using IV=8 (seq=9)
+[09:37:34] 00:1d:93:11:22:33: ### transmitted data using IV=9 (seq=10)
+[09:37:34] 00:1d:93:11:22:33: ### transmitted data using IV=10 (seq=11)
+[09:37:34] 00:1d:93:11:22:33: ### transmitted data using IV=11 (seq=12)
+[09:37:34] 00:1d:93:11:22:33: ### transmitted data using IV=12 (seq=13)
+[09:37:35] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[09:37:35] 00:1d:93:11:22:33: ### transmitted data using IV=13 (seq=14)
+[09:37:35] 00:1d:93:11:22:33: ### transmitted data using IV=14 (seq=15)
+[09:37:35] 00:1d:93:11:22:33: ### transmitted data using IV=15 (seq=16)
+[09:37:35] 00:1d:93:11:22:33: ### transmitted data using IV=16 (seq=17)
+[09:37:35] 00:1d:93:11:22:33: ### transmitted data using IV=17 (seq=18)
+[09:37:35] 00:1d:93:11:22:33: ### transmitted data using IV=17 (seq=18)
+[09:37:35] 00:1d:93:11:22:33: ### transmitted data using IV=18 (seq=19)
+[09:37:37] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[09:37:39] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[09:37:40] 00:1d:93:11:22:33: ### transmitted data using IV=19 (seq=20)
+[09:37:40] 00:1d:93:11:22:33: ### transmitted data using IV=20 (seq=21)
+[09:37:40] 00:1d:93:11:22:33: ### transmitted data using IV=21 (seq=22)
+[09:37:40] 00:1d:93:11:22:33: ### transmitted data using IV=22 (seq=23)
+[09:37:40] 00:1d:93:11:22:33: ### transmitted data using IV=23 (seq=24)
+[09:37:40] 00:1d:93:11:22:33: ### transmitted data using IV=24 (seq=25)
+[09:37:40] 00:1d:93:11:22:33: ### transmitted data using IV=25 (seq=26)
+[09:37:40] 00:1d:93:11:22:33: ### transmitted data using IV=26 (seq=27)
+[09:37:40] 00:1d:93:11:22:33: ### transmitted data using IV=27 (seq=28)
+[09:37:40] 00:1d:93:11:22:33: ### transmitted data using IV=28 (seq=29)
+[09:37:41] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[09:37:43] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[09:37:45] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[09:37:45] 00:1d:93:11:22:33: ### transmitted data using IV=29 (seq=30)
+[09:37:45] 00:1d:93:11:22:33: ### transmitted data using IV=30 (seq=31)
+[09:37:45] 00:1d:93:11:22:33: ### transmitted data using IV=31 (seq=32)
+[09:37:45] 00:1d:93:11:22:33: ### transmitted data using IV=32 (seq=33)
+[09:37:45] 00:1d:93:11:22:33: ### transmitted data using IV=33 (seq=34)
+[09:37:45] 00:1d:93:11:22:33: ### transmitted data using IV=34 (seq=35)
+[09:37:47] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[09:37:49] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[09:37:51] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+wlan0: STA 00:1d:93:11:22:33 IEEE 802.11: authenticated
+wlan0: STA 00:1d:93:11:22:33 IEEE 802.11: associated (aid 1)
+[09:37:52] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[09:37:52] 00:1d:93:11:22:33: ### transmitted data using IV=1 (seq=2)
+[09:37:52] 00:1d:93:11:22:33: ### transmitted data using IV=2 (seq=3)
+[09:37:53] 00:1d:93:11:22:33: ### transmitted data using IV=3 (seq=4)
+[09:37:54] 00:1d:93:11:22:33: Hostapd: already installing pairwise key
+[09:37:54] 00:1d:93:11:22:33: Hostapd: Resetting Tx IV of group key and sending Msg3/4
+[09:37:54] 00:1d:93:11:22:33: ### transmitted data using IV=4 (seq=5)
+[09:37:54] 00:1d:93:11:22:33: ### transmitted data using IV=5 (seq=6)
+[09:37:54] 00:1d:93:11:22:33: ### transmitted data using IV=6 (seq=7)
+^Cwlan0: interface state ENABLED->DISABLED
+wlan0: AP-STA-DISCONNECTED 00:1d:93:11:22:33
+Traceback (most recent call last):
+wlan0: AP-DISABLED 
+
